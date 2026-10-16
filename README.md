@@ -1,115 +1,52 @@
-# 蚊虫监测意图识别
+# 蚊虫监测 NLU
 
-使用 `hfl/chinese-macbert-base` 微调多标签文本分类模型，完成数据读取、模型加载、训练、保存和本地预测。一句话可以识别一个或两个业务意图，两个均未命中时返回 `unknown`。
+本分支 `feature/joint-nlu` 用于重新实现意图识别、实体提取和查询任务分组。旧业务代码和数据集已清理，目前尚未实现新流程，也未重新训练。
 
-## 安装依赖
+## 保留的资源
 
-在项目目录运行，已有 `.venv` 时直接使用：
+- `models/`：原有模型及附带文件，保持原样。其中旧意图模型尚不支持实体提取和任务分组。
+- `.cache/huggingface/`：预训练模型下载缓存。
+- `.venv/`、`requirements.txt`：本地环境及基础依赖。
 
-```bash
-.venv/bin/python -m pip install -r requirements.txt
+模型、缓存和虚拟环境不提交到 Git。旧代码和数据可从 `main` 的 Git 历史找回。
+
+## 目标流程（待实现）
+
+```text
+用户问题
+  → MacBERT 编码一次，保留文本特征
+  → 意图分类
+  → 未识别到业务意图：提示用户说明查询需求
+  → 根据文本特征和意图，提取实体并划分查询任务
+  → 按每个任务的意图规范标准化和校验参数
+  → 缺少必要信息：追问
+  → 所有任务通过校验：调用对应后台接口
+  → 整理回答
 ```
 
-首次使用且没有虚拟环境时，先运行 `python3 -m venv .venv`。建议使用 Python 3.11。
+意图分类和实体提取复用一次编码的特征。任务分组需要区分实体属于哪个查询任务；同一种意图也可以对应多个任务。模型结构及训练标注必须支持这些关系，单纯增加实体分类层不能自动解决任务归属。
 
-## 准备数据
+日期转换、字段白名单、必填项、取值范围和接口调用由业务代码处理。具体意图规范及后台接口约定尚待明确。
 
-`data/train.csv` 使用 UTF-8 编码，首行为字段名，后续每行为一条样本：
+## 数据集（当前均为空）
 
-```csv
-text,label
-今天监测了多少只蚊虫？,species_compose_report
-最近7天哪个省份蚊虫最多？,region_rank_report
-统计今天蚊虫总数，再列出数量最多的五个省份。,species_compose_report|region_rank_report
-我的父亲是谁？,unknown
-```
+使用 UTF-8 JSONL，每行一个独立 JSON 对象，不设 CSV 表头。格式适合表达任务列表和嵌套实体。
 
-标签自动从 CSV 中生成，不必在代码里手动维护。文本含英文逗号、引号或换行时，应按 CSV 规则转义，例如使用 Python 的 `csv.writer` 写入。
+- `data/train.jsonl`：训练模型。
+- `data/validation.jsonl`：选择模型、调整阈值和训练参数。
+- `data/test.jsonl`：最终评估，不用于调参。
 
-当前 `train.csv` 有 252 条人工编写样本，分为四种标注模式：
+正式采集前先确定统一标注格式：原始问题、任务列表、每个任务的意图、实体类型及其在原文中的位置。实体必须归属具体任务；未知问题使用空任务列表。推荐实体位置采用 Python 字符索引，起点包含、终点不包含。实体原文标注与标准化后的后台参数分开定义。
 
-- `species_compose_report`：72 条，蚊虫数量与蚊种构成查询，含“蚊子”等口语说法。
-- `region_rank_report`：60 条，省、市、区、街道等行政区域的蚊虫数量排名。
-- `species_compose_report|region_rank_report`：60 条，同时包含两种业务需求，以 `|` 分隔。
-- `unknown`：60 条，无关聊天、标点、不完整输入，以及当前尚未支持的查询。
+本次不生成示例训练样本，不沿用旧 CSV 数据。
 
-`data/test.csv` 另有 60 条未参与训练的样本：两个单意图各 10 条、双意图 20 条、`unknown` 20 条。训练集与测试集没有完全相同的问句。
+## 训练约定
 
-训练时只为两个业务意图建立输出位置。例如标签顺序为 `[region_rank_report, species_compose_report]` 时，排名为 `[1, 0]`，数量为 `[0, 1]`，双意图为 `[1, 1]`，`unknown` 为 `[0, 0]`。`unknown` 不能和业务标签同时标注。使用 `multi_label_classification` 和浮点多标签向量训练，模型内部采用 `BCEWithLogitsLoss`。
+1. 先确定意图及实体规范、任务分组标注，再实现最小可用的数据读取和模型结构。
+2. 划分训练、验证和测试集；重复问题和高度相似的模板变体放入同一集合，避免数据泄漏。
+3. 固定随机种子，记录数据版本、标签映射、训练配置和评估结果；仅在训练集更新模型权重。
+4. 用验证集选择检查点和阈值，同时检查意图、实体、实体任务归属及整个任务的正确率。
+5. 新模型保存到独立目录，例如 `models/joint_nlu/`，保留已有模型。
+6. 保存模型、分词器、标签映射和配置后，验证重新加载及预测结果。
 
-设备、趋势、环境、生境等需求目前也标为 `unknown`，因为当前只支持两个业务意图；未来增加对应意图时，需要重新标注这部分样本。用户已反馈的“你”“？”“我的父亲是谁？”已纳入训练，测试使用其他问法，不能把这三个已见样本的正确预测当作独立测试效果。
-
-## 训练并保存
-
-```bash
-.venv/bin/python train.py
-```
-
-首次训练需要联网下载模型，默认缓存到 `.cache/huggingface/`。本机训练默认使用 Apple GPU（`mps`），由 `config.py` 中的 `TRAIN_DEVICE` 控制；不可用时会明确报错，不会自动回退 CPU。预测仍自动选择可用设备。可用 `--device cpu` 显式使用 CPU，或用 `--device cuda` 指定 NVIDIA GPU。
-
-本机安装依赖时遇到 Python CA 证书配置问题，可使用系统证书：
-
-```bash
-.venv/bin/python -m pip install --cert /etc/ssl/cert.pem -r requirements.txt
-REQUESTS_CA_BUNDLE=/etc/ssl/cert.pem HF_HUB_DISABLE_XET=1 .venv/bin/python train.py
-```
-
-模型完整缓存后，可用 `HF_HUB_OFFLINE=1 .venv/bin/python train.py --device mps` 离线进行 GPU 训练。训练日志会打印 `设备：mps`，保存的模型配置也记录训练设备、样本数和轮数。
-
-默认训练 3 轮，批次大小为 2。路径、模型名称和默认训练参数在 `config.py` 中，也可通过命令行调整，例如：
-
-```bash
-.venv/bin/python train.py --epochs 5 --batch-size 2 --device cpu
-```
-
-训练结果保存在 `models/intent_classifier/`，包含模型权重、分词器和带标签映射的 `config.json`。再次训练会更新该目录；需要保留不同版本时，用 `--output-dir` 指定其他目录。
-
-模型同时保存多标签分类模式和预测阈值。旧的单标签模型需要重新训练，预测脚本会拒绝将其作为多标签模型使用。
-
-## 重新加载并预测
-
-单次预测：
-
-```bash
-.venv/bin/python predict.py --text "哪个城市的蚊虫最多？"
-```
-
-交互式预测：
-
-```bash
-.venv/bin/python predict.py
-```
-
-输入 `/exit` 退出。预测只读取本地训练结果，不下载模型。自定义训练输出目录时，预测需通过 `--model-dir` 指定同一目录。
-
-结果包含 `text`、意图列表 `intents`、每个业务意图的分数 `scores` 和阈值 `threshold`。例如双意图问题可能输出：
-
-```json
-{
-  "text": "统计今天蚊虫总数，再列出数量最多的五个省份。",
-  "intents": ["region_rank_report", "species_compose_report"],
-  "scores": {
-    "region_rank_report": 0.95,
-    "species_compose_report": 0.97
-  },
-  "threshold": 0.5
-}
-```
-
-预测使用 sigmoid，两个分数独立计算，不要求相加为 1。达到阈值的业务意图都会选中；均未达到时，`intents` 为 `["unknown"]`。不单独输出 unknown 分数，避免将它误当成经过模型预测的第三个概率。
-
-默认阈值 `0.5` 是起始设置，尚未用独立验证集校准；训练时可用 `--threshold` 保存其他阈值，预测时也可用 `--threshold` 临时覆盖。例如 `.venv/bin/python predict.py --threshold 0.6`。分数不代表经过校准的正确概率，未知样本也不能保证覆盖所有无关问题。
-
-代码、数据或模型更新后，请退出原来的交互进程，再重新运行 `predict.py`。
-
-## 检查代码
-
-```bash
-.venv/bin/python -m unittest discover -s tests -v
-```
-
-覆盖多标签解析、未知样本、标签冲突、同时选中多个意图、阈值和旧模型检查。实际识别效果还需要加载训练结果，用未参与训练的数据检查。
-
-## 当前验证范围
-
-当前识别意图集合，不负责给每个意图绑定各自的地区、时间，也不执行工具调用。训练样本和测试样本都是人工编写的，测试集不参与训练；初步测试结果不能代表真实用户问题上的准确率。应分别检查单意图、双意图和未知问题的效果，并补充真实问句与独立验证集。
+实现遵循 KISS：先用少量职责清晰的函数完成流程，按需要添加文件，避免预先搭建复杂框架。
