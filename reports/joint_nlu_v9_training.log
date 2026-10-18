@@ -1,0 +1,38 @@
+设备：mps；训练样本：4192；验证样本：0
+未提供验证集：将完整训练所有数据并保存最后一轮，不报告验证准确率。
+意图训练权重：{'__none__': 0.9076222777366638, 'region_rank_report': 1.0, 'species_compose_report': 1.0}
+学习率：MacBERT=2e-05，新预测层=0.001
+第 1/10 轮：完成 524 批，loss=0.4421
+第 2/10 轮：完成 524 批，loss=0.0959
+第 3/10 轮：完成 524 批，loss=0.0216
+第 4/10 轮：完成 524 批，loss=0.0070
+第 5/10 轮：完成 524 批，loss=0.0044
+第 6/10 轮：完成 524 批，loss=0.0035
+第 7/10 轮：完成 524 批，loss=0.0022
+第 8/10 轮：完成 524 批，loss=0.0060
+第 9/10 轮：完成 524 批，loss=0.0036
+第 10/10 轮：完成 524 批，loss=0.0015
+训练集拟合检查（不代表新问题准确率）：{'task_exact_match': 0.9978530534351145, 'intent_exact_match': 1.0}
+模型已保存并重新加载：/Applications/pythoncunfangchu/nlu-demo/models/joint_nlu_v9
+{
+  "text": "最近7天哪个省份蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

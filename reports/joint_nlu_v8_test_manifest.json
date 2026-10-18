@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-10-17T08:36:10.667269+00:00",
+  "purpose": "评估用户已训练完成的 v8；不参与训练或选择检查点。",
+  "new_sample_count": 32,
+  "task_counts": {
+    "1": 16,
+    "2": 8,
+    "3": 4,
+    "4": 4
+  },
+  "annotations_fixed_before_fresh_predictions": true,
+  "review_note": "在新题首次预测前独立复核；第20条明确两个任务共享近7天并重算边界。",
+  "existing_data_sha256": {
+    "data/test/species_compose_report.jsonl": "f56a6e6e2689abab37fa9420b1a10302191939e4bcb1cd90b536e2a5b0d574a9",
+    "data/test/time_context.jsonl": "9e01af15598ebb7205f122181cdaa988c6298c84c4aa168ef1dabbd0f4bb2d09",
+    "data/test/unknown.jsonl": "244832795fe601f0369dc70c9d54282f7aec365f44981454b41323028198567e",
+    "data/train/region_rank_report/region_rank_report.jsonl": "579d9d1b99abc42ad5821e817280bab893dbef170fc41dd6e2369785f0dc0a05",
+    "data/train/species_compose_report/species_compose_report.jsonl": "00b7bcdc17b95d766ae83f8ebbb6b12be4b6abe87a81ac03cb984a8db7070fd3",
+    "data/train/species_compose_report/species_compose_report_augmented.jsonl": "28c2e0d3b6a14a79b1e4e02e2f32385bd55462d196e3e4412455ad87d8aebebc",
+    "data/train/species_compose_report/species_compose_report_time_context.jsonl": "cb8aafd0b7bddda0f0260d514bcd661857a104cca05bdd288c4b05f193c92c74",
+    "data/train/unknown.jsonl": "32b27d9759c0b0f004eccbd865197556df62ce84b5bd90728ee826d12d56a440"
+  },
+  "source_array_sha256": {
+    "/tmp/v8_region_test.json": "2a45da7d727ba7a6074114e3df298a731b21899c8daa8cd81c8ca5bb103c9d5f",
+    "/tmp/v8_mixed_test.json": "37acac6b570d22c186dc1976c1a445bba074da2be5c32731dc9ecf01d024b312"
+  },
+  "new_test_sha256": {
+    "data/test/region_rank_report/region_rank_report.jsonl": "6493ac937851d98d1a45dd7565a1f6c679af4ba4079086587d9665ec93388932",
+    "data/test/region_rank_report/mixed_intents.jsonl": "4bf6fee772f59494c7b25f134e5b5376ca9eb6385116aea58cee8b4f7fb35be5"
+  }
+}

@@ -1,0 +1,5853 @@
+{
+  "text": "最近7天哪个省份蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省哪些城市蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市哪个区蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南山区蚊虫最多的5个街道是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "哪个省份白纹伊蚊最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天蚊虫监测数量最多的3个省份是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "把昨天各省份的蚊虫数量排名列出来。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "请列出本周监测蚊虫总数排名前十的省份。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "top_n",
+          "text": "十",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上个月按蚊虫监测数量给各省份排个名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我想看近30天各省监测蚊虫数量的完整榜单，从多到少排列。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "rank_level",
+          "text": "省",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "2026年10月1日至2026年10月7日蚊虫最多的五个省份有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "2026年10月1日至2026年10月7日",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 26,
+          "end": 27
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 28,
+          "end": 30
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个月哪个省份记录的蚊虫数量最高？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "统计过去两周各省份的蚊虫数量，返回数量最多的前8项。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "过去两周",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "8",
+          "start": 23,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今年蚊虫监测总数前20名的省份有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今年",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "top_n",
+          "text": "20",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省最近7天蚊虫数量最多的5个城市有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "湖南省本月哪个城市监测到的蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "请把江苏省昨天各城市的蚊虫总数按从多到少排列。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我想看浙江省本周监测数量排名前三的城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福建省所有城市的蚊虫数量排名，时间选上周。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 18,
+          "end": 20
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "监测范围是四川省，请给出近14天蚊虫数量最多的10个城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "四川省",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "top_n",
+          "text": "10",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "2026年9月广东省各城市的蚊虫数量排名是什么样的？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "2026年9月",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "湖北省哪些城市在今天监测到的蚊虫较多？给出前5名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖北省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 22,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "按蚊虫监测数量给安徽省各城市排名，我要最近30天的前六名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "安徽省",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "type": "time",
+          "text": "最近30天",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "type": "top_n",
+          "text": "六",
+          "start": 26,
+          "end": 27
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市今天哪些区蚊虫数量最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省广州市近7天蚊虫数量最多的3个区是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "杭州市这个月各区县监测到的蚊虫数量怎么排名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "杭州市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "查询成都市上个月蚊虫监测数量前五名的区县。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "成都市",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 18,
+          "end": 20
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦列出武汉市本周各区的蚊虫数量排名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "武汉市",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "江苏省无锡市昨天哪个区县蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "无锡市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "时间选最近14天，范围选厦门市，列出监测蚊虫数量最多的2个区。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近14天",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 27,
+          "end": 28
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 29,
+          "end": 30
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "想看长沙市各区县的蚊虫数量榜单，取本月的数据。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南京市过去一周哪四个区监测到的蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "南京市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "过去一周",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福田区今天蚊虫数量最多的5个街道是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市南山区本周哪个街道监测蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "请列出广东省深圳市宝安区最近7天的街道蚊虫数量排名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "district",
+          "text": "宝安区",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "天河区这个月监测数量最高的三个街道有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "天河区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "厦门市思明区各街道在上个月的蚊虫数量怎么排名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "district",
+          "text": "思明区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我要杭州市西湖区近30天蚊虫数量前10名的街道。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "杭州市",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "district",
+          "text": "西湖区",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "type": "top_n",
+          "text": "10",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我按从多到少排列罗湖区各街道昨天的蚊虫监测数量。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "罗湖区",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省深圳市福田区哪些街道近14天蚊虫最多？只看前二名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "二",
+          "start": 25,
+          "end": 26
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省最近7天雌性白纹伊蚊最多的5个城市是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 18,
+          "end": 20
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本周雄性致倦库蚊监测数量最高的三个省份有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上个月淡色库蚊在哪些省份监测得最多？列前10名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "type": "top_n",
+          "text": "10",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "湖南省近7天哪个城市的三带喙库蚊最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 11,
+          "end": 16
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市本月骚扰阿蚊数量最多的5个区有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省深圳市福田区昨天白纹伊蚊最多的3个街道是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "2026年9月摇蚊科数量最多的5个省份有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "2026年9月",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "摇蚊科",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "湖南省2026年9月各城市的中华按蚊数量排名是什么？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "2026年9月",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 14,
+          "end": 18
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "长沙市上个月埃及伊蚊在哪个区县最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南山区今天各街道的雌蚊数量怎么排名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省近30天雄蚊最多的十个城市有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "十",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本周各省份的雌性蚊虫监测数量，按从多到少排列。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广州市昨天雄性淡色库蚊最多的3个区是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市福田区最近14天雌性致倦库蚊最多的五个街道有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "最近14天",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 22,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "江苏省本月各城市的未知性别蚊虫数量怎么排名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "2026年9月未知性别的白纹伊蚊最多的3个省份有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "2026年9月",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "长沙市上个月哪些区县监测到的性别未知白纹伊蚊最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "type": "sex",
+          "text": "性别未知",
+          "start": 14,
+          "end": 18
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 18,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省今天各城市的蚊虫总数量排名，不限制性别。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "宝安区本周哪五个街道监测到的三带喙库蚊最多？包含全部性别。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "宝安区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 14,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "浙江省这个月只看雌性，不限制蚊种，哪3个城市蚊虫数量最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近7天白纹伊蚊和致倦库蚊合计数量最多的5个省份有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 22,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省今天把白纹伊蚊和淡色库蚊的数量加起来，按城市给一个排名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市本周致倦库蚊与三带喙库蚊合计最多的3个区是哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 22,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福田区近30天白纹伊蚊和致倦库蚊合计数量的街道排名前五名有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 26,
+          "end": 27
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上个月将淡色库蚊与骚扰阿蚊合并统计，哪些省份的数量最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "湖南省本月只看雌性，把白纹伊蚊和致倦库蚊合计后，数量最多的5个城市有哪些？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 31,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广州市昨天只看雄性，把白纹伊蚊与三带喙库蚊数量合并后给出区排名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 28,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市南山区本周合并中华按蚊和埃及伊蚊的数量，哪些街道最多？取前3名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 32,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "2026年9月按白纹伊蚊、致倦库蚊和淡色库蚊三种合计数量给省份排名，取前10名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "2026年9月",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "type": "top_n",
+          "text": "10",
+          "start": 36,
+          "end": 38
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福建省近14天把骚扰阿蚊和淡色库蚊算在一起，返回数量最多的五个城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 31,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下这个广东省各城市的蚊虫数量排名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下这个月广东省各城市的蚊虫数量排名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "想看看那个深圳市的区级蚊虫数量榜单。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "想看看上个月深圳市的区级蚊虫数量榜单。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个福田区，哪三个街道蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个月福田区，哪三个街道蚊虫最多？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "给我广东省近7天的区域蚊虫数量排名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市今天各区域蚊虫数量怎么排名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本周 深圳市 哪5个区监测的蚊虫最多",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "查查南山区，时间是昨天，给出蚊虫数量最多的五个街道。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "分别列出广东省今天和昨天蚊虫数量最多的3个城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市本周的雌蚊与雄蚊各排一张榜，都取数量最多的五个区。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 26,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 26,
+          "end": 27
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "近7天白纹伊蚊和致倦库蚊分别在哪些省份最多？每种只看前三名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "查广东省上周蚊虫最多的3个城市，再查浙江省本周蚊虫最多的5个城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 28,
+          "end": 29
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南山区今天雌蚊最多的2个街道有哪些？另外看福田区昨天雄蚊最多的4个街道。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 26,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "4",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个月，广东省按白纹伊蚊与致倦库蚊合计数排城市榜；福建省按中华按蚊数量排城市榜。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 8,
+          "end": 12
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 13,
+          "end": 17
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 36,
+          "end": 38
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "先给我长沙市昨天蚊虫数量前三的区县，再给湖南省今天数量前五的城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 28,
+          "end": 29
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "把近30天全国省份按蚊虫总数从多到少排出来；另把天河区近7天的街道按蚊虫总数从多到少排出来。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 1,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "天河区",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 31,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "江苏省上个月的淡色库蚊，雌性和雄性分开做城市数量排名，各取前6名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "6",
+          "start": 30,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "6",
+          "start": 30,
+          "end": 31
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我想看广州市本月蚊虫最多的2个区，还有同一城市上月蚊虫最多的5个区。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "上月",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 30,
+          "end": 31
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 32,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "四川省与云南省分别查过去两周的城市排名，都按蚊虫数量降序取前4名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "四川省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "过去两周",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "4",
+          "start": 30,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "云南省",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "time",
+          "text": "过去两周",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "4",
+          "start": 30,
+          "end": 31
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "山东省今年的白纹伊蚊、三带喙库蚊分别给我城市数量前三名，两个榜单不要合并。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "山东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今年",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 25,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "山东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今年",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 25,
+          "end": 26
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "昨天罗湖区和宝安区各自哪些街道监测蚊虫最多？各取前五名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "district",
+          "text": "罗湖区",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 25,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "district",
+          "text": "宝安区",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 25,
+          "end": 26
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本季度和上个季度各做一份全国省级蚊虫数量降序榜，只保留各期前10名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本季度",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "省",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "10",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个季度",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "type": "rank_level",
+          "text": "省",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "10",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "安徽省近14天雌性蚊虫的城市排名要一份，雄性蚊虫的城市排名也要一份，都按数量从多到少。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "安徽省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "安徽省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 25,
+          "end": 27
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "致倦库蚊数量排名：江西省查今天前3个城市，南昌市查昨天前2个区县。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "province",
+          "text": "江西省",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 18,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "city",
+          "text": "南昌市",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 28,
+          "end": 29
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "近7天，深圳市、广州市、珠海市分别取蚊虫总数最高的三个区。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省按今天、昨天、前天分别列出蚊虫最多的五个城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 21,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个月全国白纹伊蚊、淡色库蚊、致倦库蚊分别排榜，各要数量前3的省份。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 31,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 31,
+          "end": 33
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 31,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "查浙江省上周蚊虫最多的三个城市；查杭州市本周最多的两个区；查西湖区昨天最多的四个街道。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "杭州市",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "西湖区",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 38,
+          "end": 39
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 40,
+          "end": 42
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福田区近30天分别按雌性、雄性、未知性别蚊虫数量做街道降序排名，每榜取前3名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 36,
+          "end": 37
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 36,
+          "end": 37
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 36,
+          "end": 37
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "昨天有三项排名：福建省按白纹伊蚊与致倦库蚊合计数排城市，厦门市按雌蚊数排区，思明区按总蚊数排街道。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 25,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 36,
+          "end": 37
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "district",
+          "text": "思明区",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 46,
+          "end": 48
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "给我三张蚊虫数量降序榜：本月湖南省的城市前5名，湖北省的城市前3名，以及江西省的城市前4名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 21,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "type": "province",
+          "text": "湖北省",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 31,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "type": "province",
+          "text": "江西省",
+          "start": 36,
+          "end": 39
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 40,
+          "end": 42
+        },
+        {
+          "type": "top_n",
+          "text": "4",
+          "start": 43,
+          "end": 44
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "请分别查南山区本周、福田区上周、罗湖区近30天监测量最高的3个街道，都只算白纹伊蚊。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 37,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 37,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "罗湖区",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 29,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 37,
+          "end": 41
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天广东省、福建省、浙江省、江苏省分别查蚊虫数量前3名的城市。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 28,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 28,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 28,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 28,
+          "end": 30
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市的区级蚊虫排名，今天、昨天、本周、上周各列数量最多的五名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 29,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 29,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 29,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 29,
+          "end": 30
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "近7天全国白纹伊蚊、致倦库蚊、淡色库蚊、中华按蚊各排一份省份数量榜，每份取前三名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 38,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 38,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 38,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 38,
+          "end": 39
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南山区今天、福田区昨天、罗湖区本周、宝安区上周分别查雌蚊最多的2个街道。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 26,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 26,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "罗湖区",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 26,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "宝安区",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 26,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天深圳市监测了多少蚊虫？再查广东省蚊虫最多的3个城市，也用今天的数据。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 23,
+          "end": 24
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本月江苏省哪些城市蚊虫最多，取前五；另外无锡市这个月总共监测了多少只？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "无锡市",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 23,
+          "end": 26
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "昨天广州市白纹伊蚊有几只？再看湖南省今天雌蚊最多的4个城市。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 20,
+          "end": 21
+        },
+        {
+          "type": "top_n",
+          "text": "4",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 27,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "先看南山区近7天蚊虫数量前3的街道，再统计深圳市近30天的致倦库蚊总量。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 29,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上个月广东省的雌性白纹伊蚊共多少只？然后按同样条件给出数量最多的三个城市。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 34,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本周杭州市先列蚊虫最多的2个区，再告诉我全市在同一时间范围内一共监测到哪些蚊种。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "杭州市",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "type": "rank_level",
+          "text": "区",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "杭州市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "查福建省今天白纹伊蚊与致倦库蚊的合计数量，再查浙江省昨天所有蚊虫数量前5的城市。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 35,
+          "end": 36
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 37,
+          "end": 39
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "近14天全国淡色库蚊数量最多的三个省份是哪几个？再告诉我常宁市同期这种蚊子的总数。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 28,
+          "end": 31
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "长沙市昨天蚊种构成怎样？还想看湖南省昨天蚊虫最多的4个城市。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "type": "top_n",
+          "text": "4",
+          "start": 25,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 27,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上周山东省雄性蚊虫数量前五的城市请列出，再查济南市本周三带喙库蚊有几只。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "山东省",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "济南市",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 27,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天福田区所有蚊虫有多少只？另给我这个区同一天白纹伊蚊和致倦库蚊合计数最多的3个街道。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 38,
+          "end": 39
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 40,
+          "end": 42
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个月云南省蚊虫最多的两个城市是哪里？还有昆明市这个月雌蚊总数是多少？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "province",
+          "text": "云南省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "昆明市",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    }
+  ]
+}

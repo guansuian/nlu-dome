@@ -1,0 +1,2065 @@
+{
+  "created_at_utc": "2026-10-17T09:37:32.277473+00:00",
+  "model": "/Applications/pythoncunfangchu/nlu-demo/models/joint_nlu_v9",
+  "weights_sha256": "1ff178f125b420c935b1f9dac6b88532e2b284d0314e77c86ff0861472e03aef",
+  "cases_sha256": "1ca1331a1a68a22abb4dcd9c55df0bfc395a8ad4bddfccdf023c981eaa4be1b6",
+  "training_audit": {
+    "total_samples": 4192,
+    "mixed_samples": 812,
+    "mixed_without_any_time": 0,
+    "mixed_with_time_in_every_task": 812,
+    "mixed_by_task_count": {
+      "2": 312,
+      "3": 250,
+      "4": 250
+    },
+    "mixed_without_time_examples": [],
+    "internal_punctuation_sample_counts": {
+      "？": 7,
+      "?": 0,
+      "；": 641,
+      "。": 173,
+      "，": 565,
+      "\n": 0
+    },
+    "punctuation_note": "去除句末标点后按字符是否出现统计，一条样本可计入多个符号；不等于人工确认的任务边界。"
+  },
+  "cases": [
+    {
+      "case": "single_rank",
+      "text": "深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": true
+    },
+    {
+      "case": "single_count",
+      "text": "福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": true
+    },
+    {
+      "case": "single_rank_time",
+      "text": "深圳市今天哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "single_count_time",
+      "text": "福建省昨天白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "question_RC",
+      "text": "深圳市哪个区蚊虫最多？福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            },
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "question_CR",
+      "text": "福建省白纹伊蚊有多少只？深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "semicolon_RC",
+      "text": "深圳市哪个区蚊虫最多；福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "semicolon_CR",
+      "text": "福建省白纹伊蚊有多少只；深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "comma_RC",
+      "text": "深圳市哪个区蚊虫最多，福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            },
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "comma_CR",
+      "text": "福建省白纹伊蚊有多少只，深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "period_RC",
+      "text": "深圳市哪个区蚊虫最多。福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            },
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "period_CR",
+      "text": "福建省白纹伊蚊有多少只。深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "space_RC",
+      "text": "深圳市哪个区蚊虫最多 福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            },
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "space_CR",
+      "text": "福建省白纹伊蚊有多少只 深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "newline_RC",
+      "text": "深圳市哪个区蚊虫最多\n福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            },
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "newline_CR",
+      "text": "福建省白纹伊蚊有多少只\n深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 17,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "connector_RC",
+      "text": "先查深圳市哪个区蚊虫最多，再查福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 2,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 15,
+              "end": 18
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 18,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 2,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 15,
+              "end": 18
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 18,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "explicit_two_RC",
+      "text": "请分别回答两个问题：深圳市哪个区蚊虫最多？福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 10,
+              "end": 13
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 15,
+              "end": 16
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 21,
+              "end": 24
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 24,
+              "end": 28
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 10,
+              "end": 13
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 15,
+              "end": 16
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 21,
+              "end": 24
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 24,
+              "end": 28
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "connector_CR",
+      "text": "先查福建省白纹伊蚊有多少只，再查深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 2,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 16,
+              "end": 19
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 21,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 2,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 16,
+              "end": 19
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 21,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "explicit_two_CR",
+      "text": "请分别回答两个问题：福建省白纹伊蚊有多少只？深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 10,
+              "end": 13
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 13,
+              "end": 17
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 22,
+              "end": 25
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 27,
+              "end": 28
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 10,
+              "end": 13
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 13,
+              "end": 17
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 22,
+              "end": 25
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 27,
+              "end": 28
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "time_rank_only_RC",
+      "text": "深圳市今天哪个区蚊虫最多？福建省白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 13,
+              "end": 16
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 16,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            },
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 13,
+              "end": 16
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 16,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "time_rank_only_CR",
+      "text": "福建省白纹伊蚊有多少只？深圳市今天哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 15,
+              "end": 17
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 19,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 12,
+              "end": 15
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 15,
+              "end": 17
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 19,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "time_count_only_RC",
+      "text": "深圳市哪个区蚊虫最多？福建省昨天白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 14,
+              "end": 16
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 16,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            },
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 14,
+              "end": 16
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 16,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "time_count_only_CR",
+      "text": "福建省昨天白纹伊蚊有多少只？深圳市哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 14,
+              "end": 17
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 19,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 14,
+              "end": 17
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 19,
+              "end": 20
+            }
+          ]
+        }
+      ],
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    },
+    {
+      "case": "time_both_RC",
+      "text": "深圳市今天哪个区蚊虫最多？福建省昨天白纹伊蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 13,
+              "end": 16
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 16,
+              "end": 18
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 18,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 13,
+              "end": 16
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 16,
+              "end": 18
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 18,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true,
+      "is_training_text": false
+    },
+    {
+      "case": "time_both_CR",
+      "text": "福建省昨天白纹伊蚊有多少只？深圳市今天哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 14,
+              "end": 17
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 17,
+              "end": 19
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 21,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "福建省",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "type": "time",
+              "text": "今",
+              "start": 17,
+              "end": 18
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 21,
+              "end": 22
+            }
+          ]
+        },
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "深圳市",
+              "start": 14,
+              "end": 17
+            },
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 17,
+              "end": 19
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 21,
+              "end": 22
+            }
+          ]
+        }
+      ],
+      "count_correct": true,
+      "intent_correct": false,
+      "complete_correct": false,
+      "is_training_text": false
+    }
+  ],
+  "training_performed": false,
+  "scope": "围绕用户反馈的同一组问题做控制变量诊断，不是独立准确率测试；未修改训练数据或模型。",
+  "summary": {
+    "single_queries": {
+      "correct": 4,
+      "total": 4
+    },
+    "question_mark_no_time": {
+      "correct": 0,
+      "total": 2
+    },
+    "semicolon_no_time": {
+      "correct": 2,
+      "total": 2
+    },
+    "explicit_connectors": {
+      "correct": 2,
+      "total": 2
+    },
+    "explicit_two_questions": {
+      "correct": 2,
+      "total": 2
+    },
+    "both_queries_with_time": {
+      "correct": 1,
+      "total": 2
+    }
+  },
+  "conclusion": "这组对照中两句单独都正确，组合后对标点、明确连接词及时间条件敏感，问题集中在任务数量、意图分配和实体归属的泛化。训练集全部812条混合样本的每个任务都带时间，构成明确覆盖缺口。结果支持优先修正训练表达分布，但不能证明数据是唯一原因或排除架构影响。",
+  "next_step": "另行补充无时间/部分有时间、自然问号/逗号连接、顺序变化及两至四任务的标注；单独准备不同表达的验证集。固定本次诊断记录，不直接复制诊断题进入训练。"
+}

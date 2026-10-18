@@ -1,0 +1,639 @@
+{
+  "text": "这个月无锡有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "无锡",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个无锡有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "无锡",
+          "start": 2,
+          "end": 4
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上个月苏州市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "苏州市",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "那个苏州市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "苏州市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这周南京市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "南京市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这边南京市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "南京市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上周杭州市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "杭州市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "那边杭州市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "杭州市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本月青海省有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "青海省",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个青海省有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "青海省",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上月江苏省有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上月",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "那个江苏省有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个星期深圳市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个星期",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个深圳市有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上个星期南山区有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个星期",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "那个南山区有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "青海省的蚊子数量怎么样？然后这个无锡的蚊子数量怎么样？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "青海省",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "无锡",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "青海省这个月的蚊子数量是多少？无锡上个月的蚊子数量是多少？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "青海省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "无锡",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 17,
+          "end": 20
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个广东省有多少只白纹伊蚊；那个福建省有多少只致倦库蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 23,
+          "end": 27
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个月广东省有多少只白纹伊蚊；上个月福建省有多少只致倦库蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 25,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个深圳市今天有多少蚊子，那个广州市昨天有多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 18,
+          "end": 20
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个月深圳市有多少雌蚊，上个月广州市有多少雄蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 21,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "这个常宁监测到了哪些蚊种；那个衡阳监测到了哪些蚊种？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "常宁",
+          "start": 2,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "衡阳",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "上个月常宁监测到了哪些蚊种；这个月衡阳监测到了哪些蚊种？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "常宁",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "city",
+          "text": "衡阳",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}

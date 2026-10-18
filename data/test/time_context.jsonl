@@ -1,0 +1,159 @@
+{
+  "text": "帮我查一下这个月珠海市的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下这个珠海市的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下上个月无锡的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "type": "city",
+          "text": "无锡",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下那个无锡的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "无锡",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下这周福田区的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这周",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下这边福田区的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下上个星期浙江省的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个星期",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "帮我查一下那边浙江省的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

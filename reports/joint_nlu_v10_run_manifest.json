@@ -1,0 +1,58 @@
+{
+  "created_at_utc": "2026-10-17T09:50:36.570333+00:00",
+  "status": "completed",
+  "model_dir": "/Applications/pythoncunfangchu/nlu-demo/models/joint_nlu_v10",
+  "base_model": "hfl/chinese-macbert-base",
+  "settings": {
+    "epochs": 10,
+    "batch_size": 8,
+    "seed": 42,
+    "device": "mps",
+    "max_length": 128,
+    "max_tasks": 4,
+    "learning_rate": 2e-05,
+    "head_learning_rate": 0.001
+  },
+  "checkpoint_selection": "最高验证集完整任务匹配率；同分保留较早轮次",
+  "counts": {
+    "train": 5392,
+    "validation": 160,
+    "historical_test": 78,
+    "fresh_test": 64
+  },
+  "training_data_sha256": "710702b5142e9d43b93ff1faa21efad5fca84c16da595b66d06c036f17fbafa2",
+  "data_file_sha256": {
+    "data/test/time_context.jsonl": "9e01af15598ebb7205f122181cdaa988c6298c84c4aa168ef1dabbd0f4bb2d09",
+    "data/test/species_compose_report.jsonl": "f56a6e6e2689abab37fa9420b1a10302191939e4bcb1cd90b536e2a5b0d574a9",
+    "data/test/unknown.jsonl": "244832795fe601f0369dc70c9d54282f7aec365f44981454b41323028198567e",
+    "data/test/multitask_context/task_boundaries.jsonl": "06ac40f77799b96d83c62bcf18c68b3e65ecf908ab22afa87ccbbf1a26d84c6a",
+    "data/test/region_rank_report/mixed_intents.jsonl": "4bf6fee772f59494c7b25f134e5b5376ca9eb6385116aea58cee8b4f7fb35be5",
+    "data/test/region_rank_report/region_rank_report.jsonl": "6493ac937851d98d1a45dd7565a1f6c679af4ba4079086587d9665ec93388932",
+    "data/train/unknown_rank.jsonl": "06ce22c9c8fd24ce8fdc3de71886756da1e241076e5ad96f6d13ac894ab96df9",
+    "data/train/unknown.jsonl": "32b27d9759c0b0f004eccbd865197556df62ce84b5bd90728ee826d12d56a440",
+    "data/train/species_compose_report/species_compose_report_time_context.jsonl": "cb8aafd0b7bddda0f0260d514bcd661857a104cca05bdd288c4b05f193c92c74",
+    "data/train/species_compose_report/species_compose_report.jsonl": "00b7bcdc17b95d766ae83f8ebbb6b12be4b6abe87a81ac03cb984a8db7070fd3",
+    "data/train/species_compose_report/species_compose_report_augmented.jsonl": "28c2e0d3b6a14a79b1e4e02e2f32385bd55462d196e3e4412455ad87d8aebebc",
+    "data/train/multitask_context/task_boundaries.jsonl": "f1cfaa78d3af8fb614fae02e4363766bc159ca47dc968265266a402e9022e051",
+    "data/train/region_rank_report/region_rank_report_augmented.jsonl": "462e8d547e635034a06490e38017e9496066812adcdb452e646af1b537ed11bd",
+    "data/train/region_rank_report/region_rank_report_mixed.jsonl": "7998eaa7ea3dbf5ddcece360d7b416a36bc1f0ae00a4ec0be6458f8aade4ce6d",
+    "data/train/region_rank_report/region_rank_report.jsonl": "579d9d1b99abc42ad5821e817280bab893dbef170fc41dd6e2369785f0dc0a05",
+    "data/validation/multitask_context/task_boundaries.jsonl": "460f38c6caabdc70dbc55b81fda061c2cf69117ad4c30823a47aa0ae74b33085",
+    "data/pending/species_compose_report_dialogues.jsonl": "564e0d8a5762dd4a0e9d3ae15c97720a36709359e888099604dc24fc61b47674"
+  },
+  "code_file_sha256": {
+    "train.py": "39508d187c214d6aebe2cacf27c99d50e78dc0cfdca4f942a0c16ae66ddb564f",
+    "model.py": "4a1c7cd57d52a8dbb1926bbbea5498456d8ee2ce282753d896ac9ca0b03d1c1c",
+    "dataset.py": "f6db4a3b561a1afe76166bdb0eec9c8f649ee54486065ddb9dbde40ed49bccff",
+    "predict.py": "3f282da0efebe2e9c3ace874b9e9386e7e5256c9c74eecdf9a0b0681614d5aa9",
+    "config.py": "2b2c540d99f5e0f6d4e9318595e09c0d5f709cae4c9987af1adb1858dae1558b"
+  },
+  "v9_weights_sha256": "1ff178f125b420c935b1f9dac6b88532e2b284d0314e77c86ff0861472e03aef",
+  "diagnostic_cases_sha256": "1ca1331a1a68a22abb4dcd9c55df0bfc395a8ad4bddfccdf023c981eaa4be1b6",
+  "completed_at_utc": "2026-10-17T10:28:56.509107+00:00",
+  "completed_epochs": 10,
+  "selected_epoch": 8,
+  "model_weights_sha256": "cd9ad0326105e79b44f6c2c430758a7093b3e1a25a4b17242509ce612ce28b37",
+  "evaluation_report": "reports/joint_nlu_v10_evaluation.json",
+  "training_log": "reports/joint_nlu_v10_training.log"
+}

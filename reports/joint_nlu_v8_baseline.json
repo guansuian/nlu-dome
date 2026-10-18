@@ -1,0 +1,7107 @@
+{
+  "created_at_utc": "2026-10-17T08:31:06.589640+00:00",
+  "model": "/Applications/pythoncunfangchu/nlu-demo/models/joint_nlu_v8",
+  "model_weights_sha256": "68ea1a4dc9e29e8a2e2e762a51c8723d55c3ac19e4fac8720a40e5bb21651d25",
+  "device": "mps",
+  "phase": "baseline",
+  "nlu_config": {
+    "schema": {
+      "intents": [
+        "__none__",
+        "region_rank_report",
+        "species_compose_report"
+      ],
+      "tags": [
+        "O",
+        "B-city",
+        "I-city",
+        "B-district",
+        "I-district",
+        "B-province",
+        "I-province",
+        "B-rank_level",
+        "I-rank_level",
+        "B-sex",
+        "I-sex",
+        "B-species",
+        "I-species",
+        "B-street",
+        "I-street",
+        "B-time",
+        "I-time",
+        "B-top_n",
+        "I-top_n"
+      ],
+      "max_tasks": 4,
+      "max_length": 128
+    },
+    "training": {
+      "train_dir": "/Applications/pythoncunfangchu/nlu-demo/data/train",
+      "validation_dir": "/Applications/pythoncunfangchu/nlu-demo/data/validation",
+      "output_dir": "/Applications/pythoncunfangchu/nlu-demo/models/joint_nlu_v8",
+      "model": "hfl/chinese-macbert-base",
+      "device": "mps",
+      "epochs": 10,
+      "batch_size": 8,
+      "learning_rate": 2e-05,
+      "head_learning_rate": 0.001,
+      "max_length": 128,
+      "max_tasks": 4,
+      "seed": 42,
+      "smoke_test": false,
+      "training_data_sha256": "2864fb4dbdc1f83590e3b07748c175ab2d5846d1de7c0106c7c84a4d4de2b2a5",
+      "training_samples": 2192,
+      "intent_loss_weights": {
+        "__none__": 0.6669201254844666,
+        "region_rank_report": 1.0,
+        "species_compose_report": 1.0
+      },
+      "epoch": 10,
+      "metrics": {},
+      "batches_per_epoch": 274,
+      "validation_samples": 0
+    }
+  },
+  "training_data_fingerprint_verified": true,
+  "evaluation_input_sha256": {
+    "data/test/species_compose_report.jsonl": "f56a6e6e2689abab37fa9420b1a10302191939e4bcb1cd90b536e2a5b0d574a9",
+    "data/test/time_context.jsonl": "9e01af15598ebb7205f122181cdaa988c6298c84c4aa168ef1dabbd0f4bb2d09",
+    "data/test/unknown.jsonl": "244832795fe601f0369dc70c9d54282f7aec365f44981454b41323028198567e"
+  },
+  "normalized_overlap_with_training": 0,
+  "model_updated": false,
+  "complete_match_definition": "任务数量、意图、各任务所属实体类型和字符边界全部相同；忽略任务/实体顺序但保留重复任务。",
+  "training_fit": {
+    "overall": {
+      "total": 2192,
+      "count_correct": 2186,
+      "count_correct_rate": 0.9972627737226277,
+      "intent_correct": 2186,
+      "intent_correct_rate": 0.9972627737226277,
+      "complete_correct": 2177,
+      "complete_correct_rate": 0.9931569343065694,
+      "extra_task_cases": 6,
+      "missing_task_cases": 0
+    },
+    "by_category": {
+      "mixed": {
+        "total": 12,
+        "count_correct": 12,
+        "count_correct_rate": 1.0,
+        "intent_correct": 12,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 12,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "region_rank_report": {
+        "total": 108,
+        "count_correct": 102,
+        "count_correct_rate": 0.9444444444444444,
+        "intent_correct": 102,
+        "intent_correct_rate": 0.9444444444444444,
+        "complete_correct": 97,
+        "complete_correct_rate": 0.8981481481481481,
+        "extra_task_cases": 6,
+        "missing_task_cases": 0
+      },
+      "species_compose_report": {
+        "total": 1772,
+        "count_correct": 1772,
+        "count_correct_rate": 1.0,
+        "intent_correct": 1772,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 1768,
+        "complete_correct_rate": 0.9977426636568849,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "unknown": {
+        "total": 300,
+        "count_correct": 300,
+        "count_correct_rate": 1.0,
+        "intent_correct": 300,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 300,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      }
+    },
+    "by_expected_task_count": {
+      "0": {
+        "total": 300,
+        "count_correct": 300,
+        "count_correct_rate": 1.0,
+        "intent_correct": 300,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 300,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "1": {
+        "total": 708,
+        "count_correct": 708,
+        "count_correct_rate": 1.0,
+        "intent_correct": 708,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 708,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "2": {
+        "total": 860,
+        "count_correct": 854,
+        "count_correct_rate": 0.9930232558139535,
+        "intent_correct": 854,
+        "intent_correct_rate": 0.9930232558139535,
+        "complete_correct": 854,
+        "complete_correct_rate": 0.9930232558139535,
+        "extra_task_cases": 6,
+        "missing_task_cases": 0
+      },
+      "3": {
+        "total": 216,
+        "count_correct": 216,
+        "count_correct_rate": 1.0,
+        "intent_correct": 216,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 211,
+        "complete_correct_rate": 0.9768518518518519,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "4": {
+        "total": 108,
+        "count_correct": 108,
+        "count_correct_rate": 1.0,
+        "intent_correct": 108,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 104,
+        "complete_correct_rate": 0.9629629629629629,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      }
+    },
+    "seconds": 18.18,
+    "details": [
+      {
+        "category": "region_rank_report",
+        "text": "分别列出广东省今天和昨天蚊虫数量最多的3个城市。",
+        "expected_count": 2,
+        "predicted_count": 3,
+        "count_correct": false,
+        "intent_correct": false,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 7,
+                "end": 9
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 19,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 21,
+                "end": 23
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 19,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 21,
+                "end": 23
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 7,
+                "end": 9
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 19,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 21,
+                "end": 23
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 19,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 21,
+                "end": 23
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 19,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 21,
+                "end": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "查广东省上周蚊虫最多的3个城市，再查浙江省本周蚊虫最多的5个城市。",
+        "expected_count": 2,
+        "predicted_count": 3,
+        "count_correct": false,
+        "intent_correct": false,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 1,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 11,
+                "end": 12
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 18,
+                "end": 21
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 21,
+                "end": 23
+              },
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 1,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 11,
+                "end": 12
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 18,
+                "end": 21
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 21,
+                "end": 23
+              },
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "南山区今天雌蚊最多的2个街道有哪些？另外看福田区昨天雄蚊最多的4个街道。",
+        "expected_count": 2,
+        "predicted_count": 3,
+        "count_correct": false,
+        "intent_correct": false,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 5,
+                "end": 6
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 10,
+                "end": 11
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 12,
+                "end": 14
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 21,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 24,
+                "end": 26
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 26,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "4",
+                "start": 31,
+                "end": 32
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 33,
+                "end": 35
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 5,
+                "end": 6
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 10,
+                "end": 11
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 12,
+                "end": 14
+              },
+              {
+                "type": "top_n",
+                "text": "4",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 21,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 24,
+                "end": 26
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 26,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "4",
+                "start": 31,
+                "end": 32
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 33,
+                "end": 35
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 10,
+                "end": 11
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 26,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "4",
+                "start": 31,
+                "end": 32
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 33,
+                "end": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "先给我长沙市昨天蚊虫数量前三的区县，再给湖南省今天数量前五的城市。",
+        "expected_count": 2,
+        "predicted_count": 3,
+        "count_correct": false,
+        "intent_correct": false,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "长沙市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 6,
+                "end": 8
+              },
+              {
+                "type": "top_n",
+                "text": "三",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "区县",
+                "start": 15,
+                "end": 17
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 20,
+                "end": 23
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 23,
+                "end": 25
+              },
+              {
+                "type": "top_n",
+                "text": "五",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "长沙市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 6,
+                "end": 8
+              },
+              {
+                "type": "top_n",
+                "text": "三",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "区县",
+                "start": 15,
+                "end": 17
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 20,
+                "end": 23
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 23,
+                "end": 25
+              },
+              {
+                "type": "top_n",
+                "text": "五",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "top_n",
+                "text": "三",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "province",
+                "text": "湖",
+                "start": 20,
+                "end": 21
+              },
+              {
+                "type": "top_n",
+                "text": "五",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "我想看广州市本月蚊虫最多的2个区，还有同一城市上月蚊虫最多的5个区。",
+        "expected_count": 2,
+        "predicted_count": 3,
+        "count_correct": false,
+        "intent_correct": false,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 6,
+                "end": 8
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 15,
+                "end": 16
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "上月",
+                "start": 23,
+                "end": 25
+              },
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 30,
+                "end": 31
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 32,
+                "end": 33
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 6,
+                "end": 8
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 15,
+                "end": 16
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "本",
+                "start": 6,
+                "end": 7
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 15,
+                "end": 16
+              },
+              {
+                "type": "time",
+                "text": "上月",
+                "start": 23,
+                "end": 25
+              },
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 30,
+                "end": 31
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 32,
+                "end": 33
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 6,
+                "end": 8
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 15,
+                "end": 16
+              },
+              {
+                "type": "time",
+                "text": "上月",
+                "start": 23,
+                "end": 25
+              },
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 30,
+                "end": 31
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 32,
+                "end": 33
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "致倦库蚊数量排名：江西省查今天前3个城市，南昌市查昨天前2个区县。",
+        "expected_count": 2,
+        "predicted_count": 3,
+        "count_correct": false,
+        "intent_correct": false,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "province",
+                "text": "江西省",
+                "start": 9,
+                "end": 12
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 16,
+                "end": 17
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 18,
+                "end": 20
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "city",
+                "text": "南昌市",
+                "start": 21,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "区县",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "province",
+                "text": "江西省",
+                "start": 9,
+                "end": 12
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 16,
+                "end": 17
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 18,
+                "end": 20
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "city",
+                "text": "南昌市",
+                "start": 21,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "区县",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 16,
+                "end": 17
+              },
+              {
+                "type": "top_n",
+                "text": "2",
+                "start": 28,
+                "end": 29
+              },
+              {
+                "type": "rank_level",
+                "text": "区县",
+                "start": 30,
+                "end": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "查浙江省上周蚊虫最多的三个城市；查杭州市本周最多的两个区；查西湖区昨天最多的四个街道。",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 1,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "top_n",
+                "text": "三",
+                "start": 11,
+                "end": 12
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 17,
+                "end": 20
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 20,
+                "end": 22
+              },
+              {
+                "type": "top_n",
+                "text": "两",
+                "start": 25,
+                "end": 26
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 27,
+                "end": 28
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "西湖区",
+                "start": 30,
+                "end": 33
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 33,
+                "end": 35
+              },
+              {
+                "type": "top_n",
+                "text": "四",
+                "start": 38,
+                "end": 39
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 40,
+                "end": 42
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 1,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "top_n",
+                "text": "三",
+                "start": 11,
+                "end": 12
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 17,
+                "end": 20
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 20,
+                "end": 22
+              },
+              {
+                "type": "top_n",
+                "text": "两",
+                "start": 25,
+                "end": 26
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 27,
+                "end": 28
+              },
+              {
+                "type": "top_n",
+                "text": "四",
+                "start": 38,
+                "end": 39
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "top_n",
+                "text": "两",
+                "start": 25,
+                "end": 26
+              },
+              {
+                "type": "district",
+                "text": "西湖区",
+                "start": 30,
+                "end": 33
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 33,
+                "end": 35
+              },
+              {
+                "type": "top_n",
+                "text": "四",
+                "start": 38,
+                "end": 39
+              },
+              {
+                "type": "top_n",
+                "text": "个",
+                "start": 39,
+                "end": 40
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 40,
+                "end": 42
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "福田区近30天分别按雌性、雄性、未知性别蚊虫数量做街道降序排名，每榜取前3名。",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "sex",
+                "text": "未知性别",
+                "start": 16,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 13,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "sex",
+                "text": "未知性别",
+                "start": 16,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "sex",
+                "text": "未知性别",
+                "start": 16,
+                "end": 20
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 25,
+                "end": 27
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "昨天有三项排名：福建省按白纹伊蚊与致倦库蚊合计数排城市，厦门市按雌蚊数排区，思明区按总蚊数排街道。",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 8,
+                "end": 11
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 12,
+                "end": 16
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 17,
+                "end": 21
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 25,
+                "end": 27
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "厦门市",
+                "start": 28,
+                "end": 31
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 32,
+                "end": 33
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "district",
+                "text": "思明区",
+                "start": 38,
+                "end": 41
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 46,
+                "end": 48
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 8,
+                "end": 11
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 12,
+                "end": 16
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 17,
+                "end": 21
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 25,
+                "end": 27
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "厦门市",
+                "start": 28,
+                "end": 31
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 32,
+                "end": 33
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 36,
+                "end": 37
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 32,
+                "end": 33
+              },
+              {
+                "type": "rank_level",
+                "text": "区",
+                "start": 36,
+                "end": 37
+              },
+              {
+                "type": "district",
+                "text": "思明区",
+                "start": 38,
+                "end": 41
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 46,
+                "end": 48
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "给我三张蚊虫数量降序榜：本月湖南省的城市前5名，湖北省的城市前3名，以及江西省的城市前4名。",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 12,
+                "end": 14
+              },
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 14,
+                "end": 17
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 18,
+                "end": 20
+              },
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 21,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 12,
+                "end": 14
+              },
+              {
+                "type": "province",
+                "text": "湖北省",
+                "start": 24,
+                "end": 27
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 28,
+                "end": 30
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 12,
+                "end": 14
+              },
+              {
+                "type": "province",
+                "text": "江西省",
+                "start": 36,
+                "end": 39
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 40,
+                "end": 42
+              },
+              {
+                "type": "top_n",
+                "text": "4",
+                "start": 43,
+                "end": 44
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 12,
+                "end": 14
+              },
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 14,
+                "end": 17
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 18,
+                "end": 20
+              },
+              {
+                "type": "top_n",
+                "text": "5",
+                "start": 21,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 12,
+                "end": 14
+              },
+              {
+                "type": "province",
+                "text": "湖北省",
+                "start": 24,
+                "end": 27
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 28,
+                "end": 30
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 12,
+                "end": 14
+              },
+              {
+                "type": "rank_level",
+                "text": "市",
+                "start": 29,
+                "end": 30
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 31,
+                "end": 32
+              },
+              {
+                "type": "province",
+                "text": "江西省",
+                "start": 36,
+                "end": 39
+              },
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 40,
+                "end": 42
+              },
+              {
+                "type": "top_n",
+                "text": "4",
+                "start": 43,
+                "end": 44
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "region_rank_report",
+        "text": "请分别查南山区本周、福田区上周、罗湖区近30天监测量最高的3个街道，都只算白纹伊蚊。",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 7,
+                "end": 9
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 29,
+                "end": 30
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 31,
+                "end": 33
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 10,
+                "end": 13
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 29,
+                "end": 30
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 31,
+                "end": 33
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "罗湖区",
+                "start": 16,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 19,
+                "end": 23
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 29,
+                "end": 30
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 31,
+                "end": 33
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 7,
+                "end": 9
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 31,
+                "end": 33
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 10,
+                "end": 13
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 29,
+                "end": 30
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 31,
+                "end": 33
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          },
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "罗湖区",
+                "start": 16,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 19,
+                "end": 23
+              },
+              {
+                "type": "top_n",
+                "text": "3",
+                "start": 29,
+                "end": 30
+              },
+              {
+                "type": "rank_level",
+                "text": "街道",
+                "start": 31,
+                "end": 33
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report",
+        "text": "四川省、江西省、浙江省、福建省依次对应2026年9月、上个月、今天、上周，分别查蚊虫数。",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "四川省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "2026年9月",
+                "start": 19,
+                "end": 26
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "江西省",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 27,
+                "end": 30
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 8,
+                "end": 11
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 31,
+                "end": 33
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 34,
+                "end": 36
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "四川省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "2026年9月",
+                "start": 19,
+                "end": 26
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "江西省",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 27,
+                "end": 30
+              },
+              {
+                "type": "time",
+                "text": "今",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 8,
+                "end": 11
+              },
+              {
+                "type": "time",
+                "text": "天",
+                "start": 32,
+                "end": 33
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 34,
+                "end": 36
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report",
+        "text": "这个常宁最近2天的蚊子数量是多少；再查那边河北省今年有哪些蚊种；看一下青海省10月1日至10月7日的蚊虫数量就行。另外，我想知道这周安徽省总共发现了几只蚊子。",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁",
+                "start": 2,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "最近2天",
+                "start": 4,
+                "end": 8
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "河北省",
+                "start": 21,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "今年",
+                "start": 24,
+                "end": 26
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "青海省",
+                "start": 35,
+                "end": 38
+              },
+              {
+                "type": "time",
+                "text": "10月1日至10月7日",
+                "start": 38,
+                "end": 49
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 64,
+                "end": 66
+              },
+              {
+                "type": "province",
+                "text": "安徽省",
+                "start": 66,
+                "end": 69
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁",
+                "start": 2,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "最近2天",
+                "start": 4,
+                "end": 8
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "河北省",
+                "start": 21,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "今年",
+                "start": 24,
+                "end": 26
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "青海省",
+                "start": 35,
+                "end": 38
+              },
+              {
+                "type": "time",
+                "text": "10月1日至10月7日",
+                "start": 38,
+                "end": 49
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 64,
+                "end": 66
+              },
+              {
+                "type": "city",
+                "text": "安",
+                "start": 66,
+                "end": 67
+              },
+              {
+                "type": "province",
+                "text": "徽省",
+                "start": 67,
+                "end": 69
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report",
+        "text": "请告诉我莲花街道10月1日至10月7日的雄性蚊虫数量；再查上个月山东省有多少只雌性致倦库蚊；这个青海省的蚊虫数量能查一下吗。另外，那个四川省监测到了多少蚊子。",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "莲花街道",
+                "start": 4,
+                "end": 8
+              },
+              {
+                "type": "time",
+                "text": "10月1日至10月7日",
+                "start": 8,
+                "end": 19
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 20,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 29,
+                "end": 32
+              },
+              {
+                "type": "province",
+                "text": "山东省",
+                "start": 32,
+                "end": 35
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 39,
+                "end": 41
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 41,
+                "end": 45
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "青海省",
+                "start": 48,
+                "end": 51
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "四川省",
+                "start": 67,
+                "end": 70
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "莲花街道",
+                "start": 4,
+                "end": 8
+              },
+              {
+                "type": "time",
+                "text": "10月1日至10月7日",
+                "start": 8,
+                "end": 19
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 20,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 29,
+                "end": 32
+              },
+              {
+                "type": "province",
+                "text": "山东省",
+                "start": 32,
+                "end": 35
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 39,
+                "end": 41
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 41,
+                "end": 45
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "青海省",
+                "start": 48,
+                "end": 51
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "四川省",
+                "start": 67,
+                "end": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report",
+        "text": "请告诉我南山区最近20天的雌性蚊虫数量；上个月福田区有多少只雄性致倦库蚊。另外，这个西丽街道的蚊虫数量能查一下吗；再查那个青海省监测到了多少蚊子。",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "最近20天",
+                "start": 7,
+                "end": 12
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 20,
+                "end": 23
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 23,
+                "end": 26
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 30,
+                "end": 32
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 32,
+                "end": 36
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "西丽街道",
+                "start": 42,
+                "end": 46
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "青海省",
+                "start": 61,
+                "end": 64
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 4,
+                "end": 7
+              },
+              {
+                "type": "time",
+                "text": "最近20天",
+                "start": 7,
+                "end": 12
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 20,
+                "end": 23
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 23,
+                "end": 26
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 30,
+                "end": 32
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 32,
+                "end": 36
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "西丽街道",
+                "start": 42,
+                "end": 46
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "青海",
+                "start": 61,
+                "end": 63
+              },
+              {
+                "type": "province",
+                "text": "省",
+                "start": 63,
+                "end": 64
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "details_scope": "incorrect_predictions_only"
+  },
+  "original_test": {
+    "overall": {
+      "total": 46,
+      "count_correct": 45,
+      "count_correct_rate": 0.9782608695652174,
+      "intent_correct": 45,
+      "intent_correct_rate": 0.9782608695652174,
+      "complete_correct": 44,
+      "complete_correct_rate": 0.9565217391304348,
+      "extra_task_cases": 1,
+      "missing_task_cases": 0
+    },
+    "by_category": {
+      "species_compose_report.jsonl": {
+        "total": 32,
+        "count_correct": 32,
+        "count_correct_rate": 1.0,
+        "intent_correct": 32,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 31,
+        "complete_correct_rate": 0.96875,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "time_context.jsonl": {
+        "total": 8,
+        "count_correct": 8,
+        "count_correct_rate": 1.0,
+        "intent_correct": 8,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 8,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "unknown.jsonl": {
+        "total": 6,
+        "count_correct": 5,
+        "count_correct_rate": 0.8333333333333334,
+        "intent_correct": 5,
+        "intent_correct_rate": 0.8333333333333334,
+        "complete_correct": 5,
+        "complete_correct_rate": 0.8333333333333334,
+        "extra_task_cases": 1,
+        "missing_task_cases": 0
+      }
+    },
+    "by_expected_task_count": {
+      "0": {
+        "total": 6,
+        "count_correct": 5,
+        "count_correct_rate": 0.8333333333333334,
+        "intent_correct": 5,
+        "intent_correct_rate": 0.8333333333333334,
+        "complete_correct": 5,
+        "complete_correct_rate": 0.8333333333333334,
+        "extra_task_cases": 1,
+        "missing_task_cases": 0
+      },
+      "1": {
+        "total": 16,
+        "count_correct": 16,
+        "count_correct_rate": 1.0,
+        "intent_correct": 16,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 16,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "2": {
+        "total": 8,
+        "count_correct": 8,
+        "count_correct_rate": 1.0,
+        "intent_correct": 8,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 8,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "3": {
+        "total": 8,
+        "count_correct": 8,
+        "count_correct_rate": 1.0,
+        "intent_correct": 8,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 7,
+        "complete_correct_rate": 0.875,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      },
+      "4": {
+        "total": 8,
+        "count_correct": 8,
+        "count_correct_rate": 1.0,
+        "intent_correct": 8,
+        "intent_correct_rate": 1.0,
+        "complete_correct": 8,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0
+      }
+    },
+    "seconds": 0.39,
+    "details": [
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "今天深圳一共监测到几只蚊子？",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 2,
+                "end": 4
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 2,
+                "end": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "这周南山区有多少雌性白纹伊蚊？",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 2,
+                "end": 5
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 8,
+                "end": 10
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 10,
+                "end": 14
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 2,
+                "end": 5
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 8,
+                "end": 10
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 10,
+                "end": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "昆明市过去两周监测到的蚊虫总量是多少？",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "过去两周",
+                "start": 3,
+                "end": 7
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "过去两周",
+                "start": 3,
+                "end": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "湖南省上个月都监测到了哪些蚊种？",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 3,
+                "end": 6
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 3,
+                "end": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "粤海街道昨日的雄蚊数量能查一下吗？",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "昨日",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 7,
+                "end": 8
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "昨日",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 7,
+                "end": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "请给出这个月南京市的致倦库蚊总量。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这个月",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 6,
+                "end": 9
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 10,
+                "end": 14
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这个月",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 6,
+                "end": 9
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 10,
+                "end": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "福建近10天白纹伊蚊监测数量是多少？",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "福建",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "time",
+                "text": "近10天",
+                "start": 2,
+                "end": 6
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 6,
+                "end": 10
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "福建",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "time",
+                "text": "近10天",
+                "start": 2,
+                "end": 6
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 6,
+                "end": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "想了解杭州市前天监测的蚊种构成。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "前天",
+                "start": 6,
+                "end": 8
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "time",
+                "text": "前天",
+                "start": 6,
+                "end": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "把深圳昨天的蚊虫总量告诉我，再给我广州今天的总量。",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 1,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州",
+                "start": 17,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 19,
+                "end": 21
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 1,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州",
+                "start": 17,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 19,
+                "end": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "近5天昆明市捕获了多少白纹伊蚊；近20天南京市捕获了多少致倦库蚊？",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近5天",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 11,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近20天",
+                "start": 16,
+                "end": 20
+              },
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 20,
+                "end": 23
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 28,
+                "end": 32
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近5天",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 3,
+                "end": 6
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 11,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近20天",
+                "start": 16,
+                "end": 20
+              },
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 20,
+                "end": 23
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 28,
+                "end": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "宝安区本月的蚊种有哪些；龙华区上月的蚊种有哪些？",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "宝安区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 3,
+                "end": 5
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "龙华区",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "上月",
+                "start": 15,
+                "end": 17
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "宝安区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 3,
+                "end": 5
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "龙华区",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "上月",
+                "start": 15,
+                "end": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "新安街道今天有多少雌性蚊虫；福海街道昨天有多少雄性蚊虫？",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "新安街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 9,
+                "end": 11
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "福海街道",
+                "start": 14,
+                "end": 18
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 18,
+                "end": 20
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 23,
+                "end": 25
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "新安街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 4,
+                "end": 6
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 9,
+                "end": 11
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "福海街道",
+                "start": 14,
+                "end": 18
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 18,
+                "end": 20
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 23,
+                "end": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "近14天分别查一下：湖南省共有多少只白纹伊蚊；福建省共有多少只致倦库蚊？",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 10,
+                "end": 13
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 18,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 23,
+                "end": 26
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 31,
+                "end": 35
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 10,
+                "end": 13
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 18,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 23,
+                "end": 26
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 31,
+                "end": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "广州市的监测结果分两项给我：上周有多少只雌蚊；这周有多少只雄蚊？",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 14,
+                "end": 16
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 20,
+                "end": 21
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 23,
+                "end": 25
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 29,
+                "end": 30
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 14,
+                "end": 16
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 20,
+                "end": 21
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 23,
+                "end": 25
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 29,
+                "end": 30
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "昨天的白纹伊蚊分开统计：南山区的监测总数是多少；福田区的监测总数是多少？",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 12,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 24,
+                "end": 27
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 12,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 3,
+                "end": 7
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 24,
+                "end": 27
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "深圳市过去一周监测了哪些蚊子，另外常宁今天监测了几只蚊子？",
+        "expected_count": 2,
+        "predicted_count": 2,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "过去一周",
+                "start": 3,
+                "end": 7
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁",
+                "start": 17,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 19,
+                "end": 21
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "过去一周",
+                "start": 3,
+                "end": 7
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁",
+                "start": 17,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 19,
+                "end": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "深圳昨日蚊虫有几只；广州今日有几只；佛山前天有几只？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "time",
+                "text": "昨日",
+                "start": 2,
+                "end": 4
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "time",
+                "text": "今日",
+                "start": 12,
+                "end": 14
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "佛山",
+                "start": 18,
+                "end": 20
+              },
+              {
+                "type": "time",
+                "text": "前天",
+                "start": 20,
+                "end": 22
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "time",
+                "text": "昨日",
+                "start": 2,
+                "end": 4
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "time",
+                "text": "今日",
+                "start": 12,
+                "end": 14
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "佛山",
+                "start": 18,
+                "end": 20
+              },
+              {
+                "type": "time",
+                "text": "前天",
+                "start": 20,
+                "end": 22
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "湖南省上周白纹伊蚊多少只；广东省本周致倦库蚊多少只；浙江省本月雌蚊多少只？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 5,
+                "end": 9
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 13,
+                "end": 16
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 16,
+                "end": 18
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 18,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 26,
+                "end": 29
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 29,
+                "end": 31
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 5,
+                "end": 9
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 13,
+                "end": 16
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 16,
+                "end": 18
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 18,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 26,
+                "end": 29
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 29,
+                "end": 31
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "杭州市的蚊虫数量分开给出：今天的总量是多少；昨天的总量是多少；最近5天的总量是多少？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 22,
+                "end": 24
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "最近5天",
+                "start": 31,
+                "end": 35
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 13,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 22,
+                "end": 24
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "最近5天",
+                "start": 31,
+                "end": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "深圳市昨天分别统计：白纹伊蚊有几只；致倦库蚊有几只；全部蚊虫有几只？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 10,
+                "end": 14
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 18,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 10,
+                "end": 14
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 18,
+                "end": 22
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 3,
+                "end": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "宝安区近7天有哪些蚊子；南山区近14天有哪些蚊子；龙华区近30天有哪些蚊子？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "宝安区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近7天",
+                "start": 3,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 15,
+                "end": 19
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "龙华区",
+                "start": 25,
+                "end": 28
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 28,
+                "end": 32
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "宝安区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近7天",
+                "start": 3,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 15,
+                "end": 19
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "龙华区",
+                "start": 25,
+                "end": 28
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 28,
+                "end": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "粤海街道今早至今有多少只雌蚊；南头街道昨天有多少只雄蚊；新安街道近3天有多少只白纹伊蚊？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "今早至今",
+                "start": 4,
+                "end": 8
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 12,
+                "end": 13
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "南头街道",
+                "start": 15,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 19,
+                "end": 21
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 25,
+                "end": 26
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "新安街道",
+                "start": 28,
+                "end": 32
+              },
+              {
+                "type": "time",
+                "text": "近3天",
+                "start": 32,
+                "end": 35
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 39,
+                "end": 43
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "今早至今",
+                "start": 4,
+                "end": 8
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 12,
+                "end": 13
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "南头街道",
+                "start": 15,
+                "end": 19
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 19,
+                "end": 21
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 25,
+                "end": 26
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "新安街道",
+                "start": 28,
+                "end": 32
+              },
+              {
+                "type": "time",
+                "text": "近3天",
+                "start": 32,
+                "end": 35
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 39,
+                "end": 43
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "本周按城市分别查：南京市监测总数是多少；杭州市监测总数是多少；昆明市监测总数是多少？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 9,
+                "end": 12
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 20,
+                "end": 23
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 31,
+                "end": 34
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 9,
+                "end": 12
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 20,
+                "end": 23
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 31,
+                "end": 34
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "常宁市的数据分三项查：今天有多少只雌性蚊虫；前天有多少只雄性蚊虫；本月主要有哪些蚊种？",
+        "expected_count": 3,
+        "predicted_count": 3,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": false,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 11,
+                "end": 13
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 17,
+                "end": 19
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "前天",
+                "start": 22,
+                "end": 24
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 28,
+                "end": 30
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 33,
+                "end": 35
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 11,
+                "end": 13
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 17,
+                "end": 19
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "前天",
+                "start": 22,
+                "end": 24
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 28,
+                "end": 30
+              },
+              {
+                "type": "species",
+                "text": "蚊",
+                "start": 30,
+                "end": 31
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 33,
+                "end": 35
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "深圳今天蚊虫共几只；广州昨天蚊虫共几只；常宁本周有哪些蚊种；长沙上周有哪些蚊种？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 2,
+                "end": 4
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 12,
+                "end": 14
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁",
+                "start": 20,
+                "end": 22
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 22,
+                "end": 24
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "长沙",
+                "start": 30,
+                "end": 32
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 32,
+                "end": 34
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "深圳",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 2,
+                "end": 4
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 12,
+                "end": 14
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "常宁",
+                "start": 20,
+                "end": 22
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 22,
+                "end": 24
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "长沙",
+                "start": 30,
+                "end": 32
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 32,
+                "end": 34
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "近14天分区统计：南山区蚊虫数量是多少；福田区蚊虫数量是多少；罗湖区蚊虫数量是多少；宝安区蚊虫数量是多少？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 9,
+                "end": 12
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 20,
+                "end": 23
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "罗湖区",
+                "start": 31,
+                "end": 34
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "宝安区",
+                "start": 42,
+                "end": 45
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 9,
+                "end": 12
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 20,
+                "end": 23
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "罗湖区",
+                "start": 31,
+                "end": 34
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "近14天",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "district",
+                "text": "宝安区",
+                "start": 42,
+                "end": 45
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "湖南省分四个查询：今天白纹伊蚊有几只；昨天致倦库蚊有几只；本周雌蚊有几只；上周雄蚊有几只？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 9,
+                "end": 11
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 11,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 19,
+                "end": 21
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 21,
+                "end": 25
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 29,
+                "end": 31
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 37,
+                "end": 39
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 39,
+                "end": 40
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 9,
+                "end": 11
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 11,
+                "end": 15
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 19,
+                "end": 21
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 21,
+                "end": 25
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "本周",
+                "start": 29,
+                "end": 31
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 31,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "上周",
+                "start": 37,
+                "end": 39
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 39,
+                "end": 40
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "粤海街道昨天监测量多少；南头街道今天监测量多少；新安街道近5天监测量多少；福海街道近20天监测量多少？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 4,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "南头街道",
+                "start": 12,
+                "end": 16
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 16,
+                "end": 18
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "新安街道",
+                "start": 24,
+                "end": 28
+              },
+              {
+                "type": "time",
+                "text": "近5天",
+                "start": 28,
+                "end": 31
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "福海街道",
+                "start": 37,
+                "end": 41
+              },
+              {
+                "type": "time",
+                "text": "近20天",
+                "start": 41,
+                "end": 45
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 0,
+                "end": 4
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 4,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "南头街道",
+                "start": 12,
+                "end": 16
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 16,
+                "end": 18
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "新安街道",
+                "start": 24,
+                "end": 28
+              },
+              {
+                "type": "time",
+                "text": "近5天",
+                "start": 28,
+                "end": 31
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "福海街道",
+                "start": 37,
+                "end": 41
+              },
+              {
+                "type": "time",
+                "text": "近20天",
+                "start": 41,
+                "end": 45
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "今天分别查询：广东省有哪些蚊种；福建省有哪些蚊种；湖南省有哪些蚊种；江苏省有哪些蚊种？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 16,
+                "end": 19
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 25,
+                "end": 28
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "江苏省",
+                "start": 34,
+                "end": 37
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "广东省",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "福建省",
+                "start": 16,
+                "end": 19
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "湖南省",
+                "start": 25,
+                "end": 28
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 0,
+                "end": 2
+              },
+              {
+                "type": "province",
+                "text": "江苏省",
+                "start": 34,
+                "end": 37
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "广州市分别查询：今天雌性白纹伊蚊多少只；昨天雄性白纹伊蚊多少只；近7天雌性致倦库蚊多少只；近30天雄性致倦库蚊多少只？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 8,
+                "end": 10
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 12,
+                "end": 16
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 20,
+                "end": 22
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 22,
+                "end": 24
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 24,
+                "end": 28
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近7天",
+                "start": 32,
+                "end": 35
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 35,
+                "end": 37
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 45,
+                "end": 49
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 49,
+                "end": 51
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 51,
+                "end": 55
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今天",
+                "start": 8,
+                "end": 10
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 10,
+                "end": 12
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 12,
+                "end": 16
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "昨天",
+                "start": 20,
+                "end": 22
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 22,
+                "end": 24
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 24,
+                "end": 28
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近7天",
+                "start": 32,
+                "end": 35
+              },
+              {
+                "type": "sex",
+                "text": "雌性",
+                "start": 35,
+                "end": 37
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 37,
+                "end": 41
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "广州市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "近30天",
+                "start": 45,
+                "end": 49
+              },
+              {
+                "type": "sex",
+                "text": "雄性",
+                "start": 49,
+                "end": 51
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 51,
+                "end": 55
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "南京市这个月监测量多少；杭州市上个月监测量多少；昆明市过去一周监测量多少；武汉市过去两周监测量多少？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "这个月",
+                "start": 3,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 15,
+                "end": 18
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 24,
+                "end": 27
+              },
+              {
+                "type": "time",
+                "text": "过去一周",
+                "start": 27,
+                "end": 31
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "武汉市",
+                "start": 37,
+                "end": 40
+              },
+              {
+                "type": "time",
+                "text": "过去两周",
+                "start": 40,
+                "end": 44
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "南京市",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "这个月",
+                "start": 3,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "杭州市",
+                "start": 12,
+                "end": 15
+              },
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 15,
+                "end": 18
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "昆明市",
+                "start": 24,
+                "end": 27
+              },
+              {
+                "type": "time",
+                "text": "过去一周",
+                "start": 27,
+                "end": 31
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "武汉市",
+                "start": 37,
+                "end": 40
+              },
+              {
+                "type": "time",
+                "text": "过去两周",
+                "start": 40,
+                "end": 44
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "species_compose_report.jsonl",
+        "text": "南山区今日雌蚊几只；福田区昨日雄蚊几只；粤海街道过去一周白纹伊蚊几只；南头街道本月致倦库蚊几只？",
+        "expected_count": 4,
+        "predicted_count": 4,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今日",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 5,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 10,
+                "end": 13
+              },
+              {
+                "type": "time",
+                "text": "昨日",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 15,
+                "end": 16
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 20,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "过去一周",
+                "start": 24,
+                "end": 28
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 28,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "南头街道",
+                "start": 35,
+                "end": 39
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 39,
+                "end": 41
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 41,
+                "end": 45
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "南山区",
+                "start": 0,
+                "end": 3
+              },
+              {
+                "type": "time",
+                "text": "今日",
+                "start": 3,
+                "end": 5
+              },
+              {
+                "type": "sex",
+                "text": "雌",
+                "start": 5,
+                "end": 6
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 10,
+                "end": 13
+              },
+              {
+                "type": "time",
+                "text": "昨日",
+                "start": 13,
+                "end": 15
+              },
+              {
+                "type": "sex",
+                "text": "雄",
+                "start": 15,
+                "end": 16
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "粤海街道",
+                "start": 20,
+                "end": 24
+              },
+              {
+                "type": "time",
+                "text": "过去一周",
+                "start": 24,
+                "end": 28
+              },
+              {
+                "type": "species",
+                "text": "白纹伊蚊",
+                "start": 28,
+                "end": 32
+              }
+            ]
+          },
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "street",
+                "text": "南头街道",
+                "start": 35,
+                "end": 39
+              },
+              {
+                "type": "time",
+                "text": "本月",
+                "start": 39,
+                "end": 41
+              },
+              {
+                "type": "species",
+                "text": "致倦库蚊",
+                "start": 41,
+                "end": 45
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下这个月珠海市的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这个月",
+                "start": 5,
+                "end": 8
+              },
+              {
+                "type": "city",
+                "text": "珠海市",
+                "start": 8,
+                "end": 11
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这个月",
+                "start": 5,
+                "end": 8
+              },
+              {
+                "type": "city",
+                "text": "珠海市",
+                "start": 8,
+                "end": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下这个珠海市的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "珠海市",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "珠海市",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下上个月无锡的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 5,
+                "end": 8
+              },
+              {
+                "type": "city",
+                "text": "无锡",
+                "start": 8,
+                "end": 10
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个月",
+                "start": 5,
+                "end": 8
+              },
+              {
+                "type": "city",
+                "text": "无锡",
+                "start": 8,
+                "end": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下那个无锡的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "无锡",
+                "start": 7,
+                "end": 9
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "city",
+                "text": "无锡",
+                "start": 7,
+                "end": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下这周福田区的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 5,
+                "end": 7
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "这周",
+                "start": 5,
+                "end": 7
+              },
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下这边福田区的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "district",
+                "text": "福田区",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下上个星期浙江省的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个星期",
+                "start": 5,
+                "end": 9
+              },
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 9,
+                "end": 12
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "time",
+                "text": "上个星期",
+                "start": 5,
+                "end": 9
+              },
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 9,
+                "end": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "time_context.jsonl",
+        "text": "帮我查一下那边浙江省的蚊虫总数。",
+        "expected_count": 1,
+        "predicted_count": 1,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ],
+        "predicted": [
+          {
+            "intent": "species_compose_report",
+            "entities": [
+              {
+                "type": "province",
+                "text": "浙江省",
+                "start": 7,
+                "end": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "unknown.jsonl",
+        "text": "你好呀，今天心情怎么样？",
+        "expected_count": 0,
+        "predicted_count": 0,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [],
+        "predicted": []
+      },
+      {
+        "category": "unknown.jsonl",
+        "text": "帮我写一首关于夏天的诗。",
+        "expected_count": 0,
+        "predicted_count": 0,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [],
+        "predicted": []
+      },
+      {
+        "category": "unknown.jsonl",
+        "text": "湖南省明天会下雨吗？",
+        "expected_count": 0,
+        "predicted_count": 0,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [],
+        "predicted": []
+      },
+      {
+        "category": "unknown.jsonl",
+        "text": "哪个城市的房价最高？",
+        "expected_count": 0,
+        "predicted_count": 1,
+        "count_correct": false,
+        "intent_correct": false,
+        "complete_correct": false,
+        "expected": [],
+        "predicted": [
+          {
+            "intent": "region_rank_report",
+            "entities": [
+              {
+                "type": "rank_level",
+                "text": "城市",
+                "start": 2,
+                "end": 4
+              },
+              {
+                "type": "rank_level",
+                "text": "房",
+                "start": 5,
+                "end": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "unknown.jsonl",
+        "text": "今天深圳的地铁几点停运？",
+        "expected_count": 0,
+        "predicted_count": 0,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [],
+        "predicted": []
+      },
+      {
+        "category": "unknown.jsonl",
+        "text": "帮我统计一下本月的工资。",
+        "expected_count": 0,
+        "predicted_count": 0,
+        "count_correct": true,
+        "intent_correct": true,
+        "complete_correct": true,
+        "expected": [],
+        "predicted": []
+      }
+    ],
+    "details_scope": "all_predictions"
+  },
+  "v7_historical_comparison": {
+    "source": "/Applications/pythoncunfangchu/nlu-demo/reports/joint_nlu_v7_evaluation.json",
+    "v7_correct": 41,
+    "v8_correct": 44,
+    "total": 46,
+    "v7_model_rerun": false,
+    "v7_by_file": {
+      "species_compose_report.jsonl": {
+        "total": 32,
+        "task_count_correct": 28,
+        "task_count_correct_rate": 0.875,
+        "intent_multiset_correct": 28,
+        "intent_multiset_correct_rate": 0.875,
+        "complete_correct": 27,
+        "complete_correct_rate": 0.84375,
+        "extra_task_cases": 4,
+        "missing_task_cases": 0,
+        "prediction_errors": 0
+      },
+      "time_context.jsonl": {
+        "total": 8,
+        "task_count_correct": 8,
+        "task_count_correct_rate": 1.0,
+        "intent_multiset_correct": 8,
+        "intent_multiset_correct_rate": 1.0,
+        "complete_correct": 8,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0,
+        "prediction_errors": 0
+      },
+      "unknown.jsonl": {
+        "total": 6,
+        "task_count_correct": 6,
+        "task_count_correct_rate": 1.0,
+        "intent_multiset_correct": 6,
+        "intent_multiset_correct_rate": 1.0,
+        "complete_correct": 6,
+        "complete_correct_rate": 1.0,
+        "extra_task_cases": 0,
+        "missing_task_cases": 0,
+        "prediction_errors": 0
+      }
+    }
+  }
+}

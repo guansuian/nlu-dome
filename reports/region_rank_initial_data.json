@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-17",
+  "status": "data_added_not_trained",
+  "file": "data/train/region_rank_report/region_rank_report.jsonl",
+  "file_sha256": "579d9d1b99abc42ad5821e817280bab893dbef170fc41dd6e2369785f0dc0a05",
+  "source_documents": [
+    "/Applications/github我的本地仓库/notebook/实习经历2/报表agent（A方案-v2）/问题列表.md",
+    "/Applications/github我的本地仓库/notebook/实习经历2/报表agent（A方案-v2）/阐述接口/区域排名.md"
+  ],
+  "source": "前5条保留问题列表中的区域排名原题；其余115条按接口说明编写并人工复核，不是真实用户日志。",
+  "new_samples": 120,
+  "total_training_samples": 2192,
+  "new_samples_by_task_count": {
+    "1": 80,
+    "2": 28,
+    "3": 8,
+    "4": 4
+  },
+  "single_categories": {
+    "source_questions": 5,
+    "scope_and_top_n": 35,
+    "species_and_sex": 20,
+    "combined_species_one_ranking": 10,
+    "wording_and_implicit_conditions": 10
+  },
+  "same_intent_multi_samples": 28,
+  "mixed_intent_samples": 12,
+  "new_task_counts_by_intent": {
+    "region_rank_report": 164,
+    "species_compose_report": 12
+  },
+  "new_entity_types": [
+    "top_n",
+    "rank_level"
+  ],
+  "annotation_rules": {
+    "top_n": "只标显式数字或中文数词，不含前/个/名；隐含前1不捏造原文实体。",
+    "rank_level": "标目标层级通名，不标具体地名中的后缀；它是NLU语义，不是可直接传给接口的已验证参数。",
+    "combined_species": "合计榜单在一个任务中标多个species；分别查询不同榜单则拆成多个任务。",
+    "missing_conditions": "只标原文，缺少的时间及上级地区由后续流程处理。",
+    "sex": "未知性别是有效筛选；全部性别不标筛选，后续参数不传sex。"
+  },
+  "validation": {
+    "schema_offsets_and_scope_level": "passed_all_120",
+    "tokenizer_alignment": "passed_all_2192",
+    "max_tasks": 4,
+    "max_length": 128,
+    "longest_new_sample_tokens": 51,
+    "normalized_duplicate_or_train_test_overlap": 0,
+    "original_data_sha256": {
+      "data/pending/species_compose_report_dialogues.jsonl": "564e0d8a5762dd4a0e9d3ae15c97720a36709359e888099604dc24fc61b47674",
+      "data/test/species_compose_report.jsonl": "f56a6e6e2689abab37fa9420b1a10302191939e4bcb1cd90b536e2a5b0d574a9",
+      "data/test/time_context.jsonl": "9e01af15598ebb7205f122181cdaa988c6298c84c4aa168ef1dabbd0f4bb2d09",
+      "data/test/unknown.jsonl": "244832795fe601f0369dc70c9d54282f7aec365f44981454b41323028198567e",
+      "data/train/species_compose_report/species_compose_report.jsonl": "00b7bcdc17b95d766ae83f8ebbb6b12be4b6abe87a81ac03cb984a8db7070fd3",
+      "data/train/species_compose_report/species_compose_report_augmented.jsonl": "28c2e0d3b6a14a79b1e4e02e2f32385bd55462d196e3e4412455ad87d8aebebc",
+      "data/train/species_compose_report/species_compose_report_time_context.jsonl": "cb8aafd0b7bddda0f0260d514bcd661857a104cca05bdd288c4b05f193c92c74",
+      "data/train/unknown.jsonl": "32b27d9759c0b0f004eccbd865197556df62ce84b5bd90728ee826d12d56a440"
+    },
+    "existing_code_tests": {
+      "passed": 6,
+      "failed": 0
+    },
+    "git_diff_check": "passed"
+  },
+  "limitations": [
+    "只有首批120条，当前数据数量不均衡。",
+    "尚未训练；v7仍只有原业务意图。",
+    "未增加区域排名验证集或测试集。",
+    "不包括设备、最少、均值排名和跨轮对话。",
+    "接口调用、行政区划补全、时间与枚举归一化仍由后续业务代码实现。"
+  ]
+}

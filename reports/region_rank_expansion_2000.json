@@ -1,0 +1,170 @@
+{
+  "created_at_utc": "2026-10-17T08:51:54.383062+00:00",
+  "status": "data_added_not_trained",
+  "source": "按区域排名接口及既有标注规则定义句式和参数组合；复核了模板，另抽查当前版本80条代表样本，不是真实用户日志。",
+  "source_documents": [
+    "data/train/region_rank_report/README.md",
+    "/Applications/github我的本地仓库/notebook/实习经历2/报表agent（A方案-v2）/阐述接口/区域排名.md"
+  ],
+  "new_samples": 2000,
+  "previous_training_samples": 2192,
+  "total_training_samples": 4192,
+  "new_groups": {
+    "单任务排名": 500,
+    "多任务排名": 600,
+    "混合意图": 800,
+    "未知意图负例": 100
+  },
+  "same_intent_multi_by_task_count": {
+    "2": 300,
+    "3": 180,
+    "4": 120
+  },
+  "mixed_by_task_count": {
+    "2": 300,
+    "3": 250,
+    "4": 250
+  },
+  "unknown_categories": {
+    "其他领域的区域排名": 40,
+    "商品或作品排行榜": 20,
+    "蚊虫知识": 20,
+    "驱蚊商品排行": 20
+  },
+  "covered_cases": [
+    "省、市、区县、街道排名",
+    "完整及省略上级的地区路径",
+    "显式前N和隐含最高",
+    "多条件仍为单任务",
+    "不同蚊种合计排名与分别排名",
+    "同一地区不同时间/性别/蚊种",
+    "多个地区共用时间与筛选条件",
+    "蚊种和时间的四任务组合",
+    "两种意图的全部2至4任务顺序组合",
+    "同条件下总数查询与排名共用实体",
+    "同一句内的明确指代",
+    "四份结果等任务数量不作为top_n",
+    "未知性别与不限制性别",
+    "口语填充词与时间表达",
+    "其他领域的排名拒识"
+  ],
+  "new_files": {
+    "data/train/region_rank_report/region_rank_report_augmented.jsonl": {
+      "samples": 1100,
+      "sha256": "462e8d547e635034a06490e38017e9496066812adcdb452e646af1b537ed11bd"
+    },
+    "data/train/region_rank_report/region_rank_report_mixed.jsonl": {
+      "samples": 800,
+      "sha256": "7998eaa7ea3dbf5ddcece360d7b416a36bc1f0ae00a4ec0be6458f8aade4ce6d"
+    },
+    "data/train/unknown_rank.jsonl": {
+      "samples": 100,
+      "sha256": "06ce22c9c8fd24ce8fdc3de71886756da1e241076e5ad96f6d13ac894ab96df9"
+    }
+  },
+  "annotation_rules": {
+    "format": "展开JSON对象，以空行隔开，沿用现有读取器；不是严格逐行JSONL。",
+    "positions": "Python字符索引，start包含、end不包含；原文切片必须与实体text一致。",
+    "task_order": "按查询表达顺序排列；共享实体可被多个任务引用。",
+    "unknown": "tasks为空列表。",
+    "top_n": "仅标注显式返回条数，不标注任务个数或隐含1。",
+    "negative_filters": "不限制性别/蚊种时不添加筛选实体。",
+    "count_fields": "数量查询中禁止出现top_n与rank_level。"
+  },
+  "validation": {
+    "new_samples": 2000,
+    "old_train_samples": 2192,
+    "total_train_samples": 4192,
+    "groups": {
+      "single": 500,
+      "rank_multi": 600,
+      "mixed": 800,
+      "unknown": 100
+    },
+    "new_task_counts": {
+      "1": 500,
+      "2": 600,
+      "3": 430,
+      "4": 370,
+      "0": 100
+    },
+    "new_tasks_by_intent": {
+      "region_rank_report": 3292,
+      "species_compose_report": 1178
+    },
+    "mixed_intent_orders": {
+      "CCCR": 18,
+      "CCR": 42,
+      "CCRC": 18,
+      "CCRR": 18,
+      "CR": 150,
+      "CRC": 42,
+      "CRCC": 18,
+      "CRCR": 18,
+      "CRR": 42,
+      "CRRC": 18,
+      "CRRR": 18,
+      "RC": 150,
+      "RCC": 42,
+      "RCCC": 18,
+      "RCCR": 18,
+      "RCR": 42,
+      "RCRC": 18,
+      "RCRR": 18,
+      "RRC": 40,
+      "RRCC": 18,
+      "RRCR": 18,
+      "RRRC": 16
+    },
+    "entities": {
+      "time": 4445,
+      "species": 3078,
+      "top_n": 2120,
+      "rank_level": 3292,
+      "sex": 1366,
+      "province": 1266,
+      "city": 1259,
+      "district": 1265
+    },
+    "samples_with_shared_entities": {
+      "time": 752,
+      "city": 195,
+      "top_n": 328,
+      "rank_level": 500,
+      "species": 520,
+      "district": 175,
+      "province": 193,
+      "sex": 177
+    },
+    "max_tokens": 118,
+    "schema_unchanged": true,
+    "all_4192_encode_success": true,
+    "normalized_duplicates_or_overlap": 0,
+    "exact_masked_template_overlap_with_test": 0,
+    "near_test_text_ratio_090": [],
+    "distinct_entity_masked_templates": 1422,
+    "original_data_sha256": {
+      "data/pending/species_compose_report_dialogues.jsonl": "564e0d8a5762dd4a0e9d3ae15c97720a36709359e888099604dc24fc61b47674",
+      "data/test/region_rank_report/mixed_intents.jsonl": "4bf6fee772f59494c7b25f134e5b5376ca9eb6385116aea58cee8b4f7fb35be5",
+      "data/test/region_rank_report/region_rank_report.jsonl": "6493ac937851d98d1a45dd7565a1f6c679af4ba4079086587d9665ec93388932",
+      "data/test/species_compose_report.jsonl": "f56a6e6e2689abab37fa9420b1a10302191939e4bcb1cd90b536e2a5b0d574a9",
+      "data/test/time_context.jsonl": "9e01af15598ebb7205f122181cdaa988c6298c84c4aa168ef1dabbd0f4bb2d09",
+      "data/test/unknown.jsonl": "244832795fe601f0369dc70c9d54282f7aec365f44981454b41323028198567e",
+      "data/train/region_rank_report/region_rank_report.jsonl": "579d9d1b99abc42ad5821e817280bab893dbef170fc41dd6e2369785f0dc0a05",
+      "data/train/species_compose_report/species_compose_report.jsonl": "00b7bcdc17b95d766ae83f8ebbb6b12be4b6abe87a81ac03cb984a8db7070fd3",
+      "data/train/species_compose_report/species_compose_report_augmented.jsonl": "28c2e0d3b6a14a79b1e4e02e2f32385bd55462d196e3e4412455ad87d8aebebc",
+      "data/train/species_compose_report/species_compose_report_time_context.jsonl": "cb8aafd0b7bddda0f0260d514bcd661857a104cca05bdd288c4b05f193c92c74",
+      "data/train/unknown.jsonl": "32b27d9759c0b0f004eccbd865197556df62ce84b5bd90728ee826d12d56a440"
+    },
+    "candidate_sha256": "ebd5b646125196b8a84805243aacfa32f05fe90dbb0ca0a8fd3fdbbe00d12bcd",
+    "review_samples": 175
+  },
+  "model_weights_unchanged": true,
+  "limitations": [
+    "合成数据有重复结构，2000条不等于2000种独立真实表达。",
+    "只新增训练数据，未重训或验证效果；现有v8尚未学习本批数据。",
+    "未创建独立验证集；保留现有78条测试题，不直接加入训练。",
+    "最多4个任务、128个token，未添加设备/最少/均值排名或跨轮对话。",
+    "测试文本排重、实体替换模板检查及相似度筛查不能证明没有所有形式的近似表达。"
+  ]
+}

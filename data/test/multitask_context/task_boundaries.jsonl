@@ -1,0 +1,3069 @@
+{
+  "text": "麻烦看看监测数据好吗？广东省统计的未知性别白纹伊蚊，哪些城市挤进数量前三名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 35,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要一份统计结果。具体是贵州省埃及伊蚊的监测记录共计多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "贵州省",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 16,
+          "end": 20
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要一份统计结果。具体是佛山市昨天汇总起来的埃及伊蚊数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "佛山市",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 23,
+          "end": 27
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？我需要全国前天白纹伊蚊监测量领先的省份名单。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 28,
+          "end": 30
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要一份统计结果。具体是我需要五华区蚊虫监测量领先的街道名单？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "五华区",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 27,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？全国前天蚊虫的监测记录共计多少只。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？西宁市近7天统计的中华按蚊，哪些区县挤进数量前6名。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "西宁市",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "type": "top_n",
+          "text": "6",
+          "start": 34,
+          "end": 35
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？我需要云南省近7天致倦库蚊监测量领先的城市名单。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "云南省",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要一份统计结果。具体是全国近30天三带喙库蚊的监测记录共计多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 19,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？我关心云南省前天埃及伊蚊累计的监测量。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "云南省",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 19,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？我需要宁波市今天中华按蚊监测量领先的区县名单。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "宁波市",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 29,
+          "end": 31
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？我需要玄武区最近10天淡色库蚊监测量领先的街道名单。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "玄武区",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "最近10天",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 32,
+          "end": 34
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要一份统计结果。具体是滨湖区今天统计的骚扰阿蚊，哪个街道数量居首？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "滨湖区",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 28,
+          "end": 30
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "麻烦看看监测数据好吗？我需要福田区最近10天雄性骚扰阿蚊监测量领先的街道名单。",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "最近10天",
+          "start": 17,
+          "end": 22
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 34,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要一份统计结果。具体是广东省统计的致倦库蚊，哪些城市挤进数量前5名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 19,
+          "end": 23
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 33,
+          "end": 34
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要一份统计结果。具体是成都市近30天统计的蚊虫，哪些区县挤进数量前6名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "成都市",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "6",
+          "start": 35,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "昆明市有哪些知名学校？按照口碑介绍一下。",
+  "tasks": []
+}
+
+{
+  "text": "怎么避免蚊虫叮咬？使用驱蚊贴有什么讲究？",
+  "tasks": []
+}
+
+{
+  "text": "厦门市有哪些知名学校？按照口碑介绍一下。",
+  "tasks": []
+}
+
+{
+  "text": "给我一些驱蚊贴的选购建议。手机也想了解。",
+  "tasks": []
+}
+
+{
+  "text": "书籍哪个最受欢迎？为什么？",
+  "tasks": []
+}
+
+{
+  "text": "给我一些驱蚊贴的选购建议。咖啡也想了解。",
+  "tasks": []
+}
+
+{
+  "text": "怎么避免蚊虫叮咬？使用电蚊拍有什么讲究？",
+  "tasks": []
+}
+
+{
+  "text": "给我一些灭蚊灯的选购建议。空调也想了解。",
+  "tasks": []
+}
+
+{
+  "text": "西宁市统计的埃及伊蚊，哪个区县数量居首？江苏省今天汇总起来的中华按蚊数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "西宁市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 30,
+          "end": 34
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "香洲区埃及伊蚊的监测记录共计多少只，我需要全国雄性蚊虫监测量领先的省份名单？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "香洲区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 3,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我关心西湖区淡色库蚊累计的监测量。四川省本周统计的蚊虫，哪个城市数量居首？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "西湖区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "四川省",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 30,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省统计的中华按蚊，哪个城市数量居首；全国昨天汇总起来的蚊虫数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 22,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要全国白纹伊蚊数量名列前2的省份名单 我关心金水区白纹伊蚊累计的监测量？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "金水区",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 27,
+          "end": 31
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "鼓楼区蚊虫的监测记录共计多少只\n陕西省这个月统计的中华按蚊，哪些城市挤进数量前8名？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "鼓楼区",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "陕西省",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 25,
+          "end": 29
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 32,
+          "end": 34
+        },
+        {
+          "type": "top_n",
+          "text": "8",
+          "start": 39,
+          "end": 40
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "珠海市中华按蚊的监测记录共计多少只？我需要全国淡色库蚊数量名列前两的省份名单？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 3,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 34,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "无锡市统计的白纹伊蚊，哪个区县数量居首，我关心江苏省蚊虫累计的监测量？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "无锡市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 23,
+          "end": 26
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "武侯区未知性别致倦库蚊的监测记录共计多少只？河南省上周统计的未知性别蚊虫，哪些城市挤进数量前8名？郑州市统计的淡色库蚊，哪些区县挤进数量前两名？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "武侯区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "河南省",
+          "start": 22,
+          "end": 25
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 39,
+          "end": 41
+        },
+        {
+          "type": "top_n",
+          "text": "8",
+          "start": 46,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "郑州市",
+          "start": 49,
+          "end": 52
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 55,
+          "end": 59
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 62,
+          "end": 64
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 69,
+          "end": 70
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要广东省中华按蚊监测量领先的城市名单，我需要海曙区蚊虫数量名列前4的街道名单，我关心全国上个月蚊虫累计的监测量？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "海曙区",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "4",
+          "start": 34,
+          "end": 35
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 36,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 46,
+          "end": 49
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "云南省统计的蚊虫，哪些城市挤进数量前5名。我需要全国埃及伊蚊数量名列前2的省份名单。广东省汇总起来的蚊虫数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "云南省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 35,
+          "end": 36
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 37,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 42,
+          "end": 45
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "安徽省统计的蚊虫，哪个城市数量居首；深圳市蚊虫的监测记录共计多少只；全国统计的埃及伊蚊，哪些省份挤进数量前五名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "安徽省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 46,
+          "end": 48
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 53,
+          "end": 54
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我关心无锡市淡色库蚊累计的监测量？我需要广东省致倦库蚊数量名列前2的城市名单？我关心全国未知性别蚊虫累计的监测量？南山区汇总起来的蚊虫数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "无锡市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 32,
+          "end": 33
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 34,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 44,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 57,
+          "end": 60
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "雁塔区统计的蚊虫，哪个街道数量居首，我关心西湖区致倦库蚊累计的监测量，陕西省汇总起来的蚊虫数量能报一下吗，全国统计的雌性埃及伊蚊，哪个省份数量居首？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "雁塔区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "西湖区",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 24,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "陕西省",
+          "start": 35,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 58,
+          "end": 60
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 60,
+          "end": 64
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 67,
+          "end": 69
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "西湖区蚊虫的监测记录共计多少只。武汉市上个月蚊虫的监测记录共计多少只。全国统计的雌性中华按蚊，哪些省份挤进数量前两名。福州市统计的蚊虫，哪个区县数量居首？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "西湖区",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "武汉市",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 19,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 40,
+          "end": 42
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 42,
+          "end": 46
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 49,
+          "end": 51
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 56,
+          "end": 57
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "福州市",
+          "start": 59,
+          "end": 62
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 70,
+          "end": 72
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我关心五华区蚊虫累计的监测量；东湖区统计的骚扰阿蚊，哪些街道挤进数量前5名；岳麓区骚扰阿蚊的监测记录共计多少只；浙江省汇总起来的三带喙库蚊数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "五华区",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "东湖区",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 21,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "type": "top_n",
+          "text": "5",
+          "start": 35,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "岳麓区",
+          "start": 38,
+          "end": 41
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 41,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 56,
+          "end": 59
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 64,
+          "end": 69
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是海曙区：三带喙库蚊在哪两个街道的监测量领先？它的监测量合起来是多少只？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "海曙区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "海曙区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 12,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是广东省，时间是近30天：致倦库蚊的监测量合起来是多少只，它在哪四个城市的监测量领先？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 20,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 39,
+          "end": 40
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 41,
+          "end": 43
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是珠海市：埃及伊蚊在哪四个区县的监测量领先。刚才这类蚊虫的监测量合起来是多少只？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 12,
+          "end": 16
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是河南省，时间是今天：骚扰阿蚊在哪四个城市的监测量领先；刚才这类蚊虫的监测量合起来是多少只？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "河南省",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "河南省",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 18,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是厦门市：中华按蚊在哪3个区县的监测量领先？这种蚊虫的监测量合起来是多少只？淡色库蚊在哪3个区县的监测量领先？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 18,
+          "end": 19
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 12,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 51,
+          "end": 52
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 53,
+          "end": 55
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是雁塔区：三带喙库蚊在哪2个街道的监测量领先，刚才这类蚊虫的监测量合起来是多少只，致倦库蚊在哪3个街道的监测量领先？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "雁塔区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 12,
+          "end": 17
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 19,
+          "end": 20
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "雁塔区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 12,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "雁塔区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 48,
+          "end": 52
+        },
+        {
+          "type": "top_n",
+          "text": "3",
+          "start": 54,
+          "end": 55
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 56,
+          "end": 58
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是天河区：骚扰阿蚊的监测量合起来是多少只？它在哪四个街道的监测量领先？三带喙库蚊的监测量合起来是多少只？这种蚊虫在哪2个街道的监测量领先？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "天河区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 12,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "天河区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "天河区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 42,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "天河区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 42,
+          "end": 47
+        },
+        {
+          "type": "top_n",
+          "text": "2",
+          "start": 65,
+          "end": 66
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 67,
+          "end": 69
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "本次的统计范围是武侯区，时间是前天：埃及伊蚊在哪四个街道的监测量领先，它的监测量合起来是多少只，白纹伊蚊在哪两个街道的监测量领先，它的监测量合起来是多少只？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "武侯区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 24,
+          "end": 25
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "武侯区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 18,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "武侯区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 48,
+          "end": 52
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 54,
+          "end": 55
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 56,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "武侯区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 48,
+          "end": 52
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "河南省汇总起来的雌性蚊虫数量能报一下吗？贵阳市蚊虫的监测记录共计多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "河南省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "贵阳市",
+          "start": 20,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要全国致倦库蚊监测量领先的省份名单，全国统计的雌性骚扰阿蚊，哪个省份数量居首？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 25,
+          "end": 27
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 34,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要香洲区本周蚊虫数量名列前三的街道名单。我需要江苏省骚扰阿蚊监测量领先的城市名单？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "香洲区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 25,
+          "end": 28
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 38,
+          "end": 40
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "全国今天三带喙库蚊的监测记录共计多少只；我关心全国埃及伊蚊累计的监测量？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 25,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要合肥市白纹伊蚊监测量领先的区县名单？长沙市统计的未知性别致倦库蚊，哪个区县数量居首？全国这个月统计的中华按蚊，哪些省份挤进数量前三名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "合肥市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 31,
+          "end": 35
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 38,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 47,
+          "end": 50
+        },
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 53,
+          "end": 57
+        },
+        {
+          "type": "rank_level",
+          "text": "省份",
+          "start": 60,
+          "end": 62
+        },
+        {
+          "type": "top_n",
+          "text": "三",
+          "start": 67,
+          "end": 68
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "我需要岳麓区蚊虫数量名列前两的街道名单，深圳市统计的骚扰阿蚊，哪个区县数量居首，我需要玄武区蚊虫数量名列前6的街道名单？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "岳麓区",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "type": "species",
+          "text": "骚扰阿蚊",
+          "start": 26,
+          "end": 30
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 33,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "玄武区",
+          "start": 43,
+          "end": 46
+        },
+        {
+          "type": "top_n",
+          "text": "6",
+          "start": 53,
+          "end": 54
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 55,
+          "end": 57
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "贵州省汇总起来的白纹伊蚊数量能报一下吗？禅城区三带喙库蚊的监测记录共计多少只？禅城区雄性淡色库蚊的监测记录共计多少只？我关心广东省这个月白纹伊蚊累计的监测量？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "贵州省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 8,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "禅城区",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 23,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "禅城区",
+          "start": 39,
+          "end": 42
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 42,
+          "end": 44
+        },
+        {
+          "type": "species",
+          "text": "淡色库蚊",
+          "start": 44,
+          "end": 48
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 62,
+          "end": 65
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 65,
+          "end": 68
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 68,
+          "end": 72
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南京市埃及伊蚊的监测记录共计多少只，长沙市白纹伊蚊的监测记录共计多少只，全国汇总起来的未知性别致倦库蚊数量能报一下吗，全国中华按蚊的监测记录共计多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "南京市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 3,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 21,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "sex",
+          "text": "未知性别",
+          "start": 43,
+          "end": 47
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 47,
+          "end": 51
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 61,
+          "end": 65
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算致倦库蚊。我需要昆明市这种蚊虫数量名列前四的区县名单？西宁市统计的这种蚊虫，哪些区县挤进数量前两名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "昆明市",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "type": "top_n",
+          "text": "四",
+          "start": 30,
+          "end": 31
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 32,
+          "end": 34
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "西宁市",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "type": "rank_level",
+          "text": "区县",
+          "start": 50,
+          "end": 52
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 57,
+          "end": 58
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算三带喙库蚊。我关心广东省这种蚊虫累计的监测量，浙江省这种蚊虫的监测记录共计多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 19,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 33,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算中华按蚊。我关心南京市这种蚊虫累计的监测量。广州市汇总起来的这种蚊虫数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "南京市",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 32,
+          "end": 35
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算致倦库蚊。福田区这种蚊虫的监测记录共计多少只；海曙区汇总起来的这种蚊虫数量能报一下吗？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 15,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "district",
+          "text": "海曙区",
+          "start": 33,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算三带喙库蚊。我需要安徽省这种蚊虫监测量领先的城市名单？广东省统计的这种蚊虫，哪些城市挤进数量前两名？四川省统计的这种蚊虫，哪些城市挤进数量前五名？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "type": "province",
+          "text": "安徽省",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 32,
+          "end": 34
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 50,
+          "end": 52
+        },
+        {
+          "type": "top_n",
+          "text": "两",
+          "start": 57,
+          "end": 58
+        }
+      ]
+    },
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "三带喙库蚊",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "type": "province",
+          "text": "四川省",
+          "start": 60,
+          "end": 63
+        },
+        {
+          "type": "rank_level",
+          "text": "城市",
+          "start": 73,
+          "end": 75
+        },
+        {
+          "type": "top_n",
+          "text": "五",
+          "start": 80,
+          "end": 81
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算中华按蚊。我关心福州市这种蚊虫累计的监测量，南京市汇总起来的这种蚊虫数量能报一下吗，我关心贵阳市这种蚊虫累计的监测量？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "福州市",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "南京市",
+          "start": 32,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "中华按蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "贵阳市",
+          "start": 55,
+          "end": 58
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算埃及伊蚊。市南区汇总起来的这种蚊虫数量能报一下吗？南明区这种蚊虫的监测记录共计多少只？滨湖区汇总起来的这种蚊虫数量能报一下吗？香洲区这种蚊虫的监测记录共计多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "district",
+          "text": "市南区",
+          "start": 15,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "district",
+          "text": "南明区",
+          "start": 35,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "district",
+          "text": "滨湖区",
+          "start": 53,
+          "end": 56
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "埃及伊蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "district",
+          "text": "香洲区",
+          "start": 73,
+          "end": 76
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "以下各地的数据都只算致倦库蚊。厦门市汇总起来的这种蚊虫数量能报一下吗，长沙市汇总起来的这种蚊虫数量能报一下吗，我关心南京市这种蚊虫累计的监测量，我关心珠海市这种蚊虫累计的监测量？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 15,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 35,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "南京市",
+          "start": 58,
+          "end": 61
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 75,
+          "end": 78
+        }
+      ]
+    }
+  ]
+}

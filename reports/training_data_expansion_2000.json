@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-16",
+  "status": "data_added_not_trained",
+  "source": "人工定义结构与参数组合的合成标注；全部模板经过复核，并按结构抽查语义；不是2000条独立真实用户日志。",
+  "new_samples": 2000,
+  "previous_train_samples": 72,
+  "total_train_samples": 2072,
+  "new_samples_by_task_count": {
+    "0": 300,
+    "1": 600,
+    "2": 800,
+    "3": 200,
+    "4": 100
+  },
+  "all_train_samples_by_task_count": {
+    "0": 300,
+    "1": 628,
+    "2": 832,
+    "3": 208,
+    "4": 104
+  },
+  "business_intents": [
+    "species_compose_report"
+  ],
+  "unknown_annotation": {
+    "tasks": []
+  },
+  "single_query_categories": {
+    "时间和口语对照": 150,
+    "自然数量查询": 150,
+    "蚊种构成与占比": 100,
+    "多条件单任务": 100,
+    "语序礼貌与标点": 100
+  },
+  "unknown_categories": {
+    "mosquito_knowledge_prevention": 64,
+    "weather_transport_travel": 48,
+    "finance_shopping_work": 48,
+    "writing_language_technology": 48,
+    "daily_life_health_food": 48,
+    "conversation_reasoning": 36,
+    "short_nonbusiness": 8
+  },
+  "business_file_sections": [
+    {
+      "records": [
+        1,
+        600
+      ],
+      "kind": "single_query"
+    },
+    {
+      "records": [
+        601,
+        1200
+      ],
+      "kind": "compact_shared_or_paired_queries",
+      "template_count": 62
+    },
+    {
+      "records": [
+        1201,
+        1700
+      ],
+      "kind": "explicit_independent_clauses",
+      "clause_template_count": 30
+    }
+  ],
+  "covered_cases": [
+    "单任务含多个筛选条件",
+    "省市区街道层级组合",
+    "时间与口语填充词对照",
+    "共享时间/蚊种/性别",
+    "不同地区与不同时间配对",
+    "同地区不同时间或蚊种",
+    "2至4个独立查询",
+    "组成/占比查询",
+    "无筛选条件的有效查询",
+    "标点/语序变化与少量重复输入",
+    "无关短输入",
+    "蚊虫科普和防蚊等非报表问题"
+  ],
+  "entity_references_by_type": {
+    "city": 1443,
+    "district": 662,
+    "province": 852,
+    "sex": 497,
+    "species": 974,
+    "street": 333,
+    "time": 2879
+  },
+  "distinct_text_spans_by_type": {
+    "city": 1325,
+    "district": 591,
+    "province": 788,
+    "sex": 417,
+    "species": 828,
+    "street": 296,
+    "time": 2488
+  },
+  "business_samples_without_entities": 20,
+  "validation": {
+    "structure_and_offsets": "passed_all_2000",
+    "tokenizer": "local models/joint_nlu_v6 (MacBERT tokenizer)",
+    "encoding": "passed_all_2072_with_max_tasks_4_max_length_128",
+    "longest_new_sample_tokens_including_special_tokens": 97,
+    "exact_duplicate_new_samples": 0,
+    "normalized_duplicate_new_samples": 0,
+    "normalized_overlap_with_existing_train_validation_test": 0,
+    "normalization": "NFKC + lowercase + retain alphanumeric characters",
+    "same_entity_placeholder_sentence_in_test": 0,
+    "same_entity_placeholder_sentence_test_texts": [],
+    "template_overlap_note": "替换实体后完全相同的句式仅作提示；不存在原文重复并不代表无近似句式，现有测试不能代替真实新问题评估。",
+    "test_sample_count_preserved": 46,
+    "original_data_sha256": {
+      "data/pending/species_compose_report_dialogues.jsonl": "564e0d8a5762dd4a0e9d3ae15c97720a36709359e888099604dc24fc61b47674",
+      "data/test/species_compose_report.jsonl": "f56a6e6e2689abab37fa9420b1a10302191939e4bcb1cd90b536e2a5b0d574a9",
+      "data/test/time_context.jsonl": "9e01af15598ebb7205f122181cdaa988c6298c84c4aa168ef1dabbd0f4bb2d09",
+      "data/test/unknown.jsonl": "244832795fe601f0369dc70c9d54282f7aec365f44981454b41323028198567e",
+      "data/train/species_compose_report.jsonl": "00b7bcdc17b95d766ae83f8ebbb6b12be4b6abe87a81ac03cb984a8db7070fd3",
+      "data/train/species_compose_report_time_context.jsonl": "cb8aafd0b7bddda0f0260d514bcd661857a104cca05bdd288c4b05f193c92c74"
+    },
+    "existing_code_tests": {
+      "command": ".venv/bin/python -m unittest discover -s tests -v",
+      "passed": 6,
+      "failed": 0
+    },
+    "git_diff_check": "passed"
+  },
+  "feedback_added_to_training": [
+    "今天深圳和广州分别有多少蚊虫",
+    "今天深圳和昨天广州分别有多少蚊虫"
+  ],
+  "limitations": [
+    "没有增加其他业务意图",
+    "没有独立验证集",
+    "最多4个任务",
+    "不含跨轮对话与模糊指代恢复",
+    "合成样本存在重复结构，新增数量不代表同等数量的新表达",
+    "尚未训练或评估新模型，不能据此认定任务数量和分组问题已解决"
+  ],
+  "new_files": {
+    "data/train/species_compose_report_augmented.jsonl": {
+      "samples": 1700,
+      "sha256": "28c2e0d3b6a14a79b1e4e02e2f32385bd55462d196e3e4412455ad87d8aebebc"
+    },
+    "data/train/unknown.jsonl": {
+      "samples": 300,
+      "sha256": "32b27d9759c0b0f004eccbd865197556df62ce84b5bd90728ee826d12d56a440"
+    }
+  }
+}

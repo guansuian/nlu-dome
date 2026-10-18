@@ -1,0 +1,53 @@
+设备：mps；训练样本：5392；验证样本：160
+意图训练权重：{'__none__': 1.0, 'region_rank_report': 1.0, 'species_compose_report': 1.0}
+学习率：MacBERT=2e-05，新预测层=0.001
+第 1/10 轮：完成 674 批，loss=0.4431
+验证结果：{'task_exact_match': 0.6125, 'intent_exact_match': 0.8875}
+第 2/10 轮：完成 674 批，loss=0.0677
+验证结果：{'task_exact_match': 0.89375, 'intent_exact_match': 0.96875}
+第 3/10 轮：完成 674 批，loss=0.0102
+验证结果：{'task_exact_match': 0.96875, 'intent_exact_match': 0.96875}
+第 4/10 轮：完成 674 批，loss=0.0043
+验证结果：{'task_exact_match': 0.93125, 'intent_exact_match': 0.9625}
+第 5/10 轮：完成 674 批，loss=0.0029
+验证结果：{'task_exact_match': 0.98125, 'intent_exact_match': 1.0}
+第 6/10 轮：完成 674 批，loss=0.0023
+验证结果：{'task_exact_match': 0.90625, 'intent_exact_match': 0.975}
+第 7/10 轮：完成 674 批，loss=0.0066
+验证结果：{'task_exact_match': 0.9625, 'intent_exact_match': 0.975}
+第 8/10 轮：完成 674 批，loss=0.0038
+验证结果：{'task_exact_match': 0.9875, 'intent_exact_match': 1.0}
+第 9/10 轮：完成 674 批，loss=0.0014
+验证结果：{'task_exact_match': 0.975, 'intent_exact_match': 1.0}
+第 10/10 轮：完成 674 批，loss=0.0021
+验证结果：{'task_exact_match': 0.8375, 'intent_exact_match': 0.89375}
+训练集拟合检查（不代表新问题准确率）：{'task_exact_match': 0.9803412462908012, 'intent_exact_match': 0.9998145400593472}
+模型已保存并重新加载：/Applications/pythoncunfangchu/nlu-demo/models/joint_nlu_v10
+{
+  "text": "我想看监测报表。玄武区哪些街道的蚊虫数量排在前6？",
+  "tasks": [
+    {
+      "intent": "region_rank_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "玄武区",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "type": "rank_level",
+          "text": "街道",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "top_n",
+          "text": "6",
+          "start": 23,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}

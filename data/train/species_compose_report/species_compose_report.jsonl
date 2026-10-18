@@ -1,0 +1,2287 @@
+{
+  "text": "今天监测了多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省监测了多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "白纹伊蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近7天雌蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市最近7天监测了多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近30天致倦库蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近30天",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福建省白纹伊蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省最近7天白纹伊蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市最近7天雌蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市最近7天雌性白纹伊蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近7天主要有哪些蚊种？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "白纹伊蚊占总数的多少？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天深圳市监测了多少只蚊虫，今天广州市监测了多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 16,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省最近7天有多少只蚊虫，福建省最近7天有多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 17,
+          "end": 21
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近湖南省有多少只蚊子，近7天常宁有哪些蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "type": "city",
+          "text": "常宁",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "查深圳今天的蚊虫总数，再查广州昨天的蚊虫总数。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "广州",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "北京市本周监测了多少只蚊虫，上海市上周监测了多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "北京市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "上海市",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "先统计浙江省这个月的蚊虫数量，再统计江苏省上个月的蚊虫数量。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "浙江省",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "这个月",
+          "start": 6,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "江苏省",
+          "start": 18,
+          "end": 21
+        },
+        {
+          "type": "time",
+          "text": "上个月",
+          "start": 21,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市今天有多少只白纹伊蚊，深圳市今天有多少只致倦库蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 23,
+          "end": 27
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省最近7天雌蚊有多少只，广东省最近7天雄蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 21,
+          "end": 22
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广州市最近30天雌性白纹伊蚊有多少只，佛山市最近7天雄性致倦库蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近30天",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "佛山市",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 26,
+          "end": 28
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 28,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "请查长沙市近一周有哪些蚊种，另外查常宁市近一个月有哪些蚊种。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 2,
+          "end": 5
+        },
+        {
+          "type": "time",
+          "text": "近一周",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "type": "time",
+          "text": "近一个月",
+          "start": 20,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市昨天监测到多少只蚊虫，深圳市今天监测到多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 14,
+          "end": 17
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省2026年10月1日的白纹伊蚊有多少只，福建省2026年10月2日的致倦库蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "2026年10月1日",
+          "start": 3,
+          "end": 13
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 14,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "type": "time",
+          "text": "2026年10月2日",
+          "start": 26,
+          "end": 36
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 37,
+          "end": 41
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南山区今天有多少只蚊虫，福田区昨天有多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "粤海街道最近7天白纹伊蚊有多少只，南头街道最近30天致倦库蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "street",
+          "text": "粤海街道",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 8,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "street",
+          "text": "南头街道",
+          "start": 17,
+          "end": 21
+        },
+        {
+          "type": "time",
+          "text": "最近30天",
+          "start": 21,
+          "end": 26
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 26,
+          "end": 30
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近7天广东省深圳市南山区的蚊虫总数是多少，最近30天福建省厦门市思明区的蚊虫总数是多少？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近30天",
+          "start": 22,
+          "end": 27
+        },
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "type": "district",
+          "text": "思明区",
+          "start": 33,
+          "end": 36
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "先看看广西壮族自治区本月监测到哪些蚊种，再看看海南省上月监测到哪些蚊种。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广西壮族自治区",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "海南省",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "type": "time",
+          "text": "上月",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "武汉市近3天有多少只雄蚊，成都市近14天有多少只雌蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "武汉市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近3天",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "成都市",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 24,
+          "end": 25
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天常宁监测到了多少蚊子，昨天衡阳监测到了多少蚊子？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "常宁",
+          "start": 2,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "type": "city",
+          "text": "衡阳",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近7天，分别查询：深圳市有多少只蚊虫；广州市有多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 20,
+          "end": 23
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市的监测数据分两项统计：今天有多少只蚊虫；昨天有多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省最近7天分别统计：白纹伊蚊有多少只；致倦库蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 12,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 21,
+          "end": 25
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "深圳市今天的白纹伊蚊分别统计：雌性有多少只；雄性有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 22,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "近7天请分别查询：深圳市有哪些蚊种；常宁市有哪些蚊种？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福建省分别查询两项数据：最近7天有多少只白纹伊蚊；最近30天有多少只致倦库蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 20,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "最近30天",
+          "start": 25,
+          "end": 30
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 34,
+          "end": 38
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天深圳市有多少只蚊虫，昨天广州市有多少只蚊虫，前天佛山市有多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 14,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "type": "city",
+          "text": "佛山市",
+          "start": 26,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省近7天白纹伊蚊有多少只，湖南省近14天致倦库蚊有多少只，福建省近30天雌蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "湖南省",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "type": "time",
+          "text": "近14天",
+          "start": 18,
+          "end": 22
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 22,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 31,
+          "end": 34
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 34,
+          "end": 38
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 38,
+          "end": 39
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "常宁市分别查询：今天有多少只蚊虫；昨天有多少只蚊虫；前天有多少只蚊虫？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "前天",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省本周分别统计：白纹伊蚊总数是多少；雌蚊总数是多少；雄蚊总数是多少？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 20,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 28,
+          "end": 29
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近7天南山区有哪些蚊种，最近30天福田区有哪些蚊种，昨天罗湖区有哪些蚊种？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近30天",
+          "start": 13,
+          "end": 18
+        },
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "type": "district",
+          "text": "罗湖区",
+          "start": 29,
+          "end": 32
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "查长沙市今天的蚊虫总数；查衡阳市昨天的白纹伊蚊数量；查常宁市近7天的致倦库蚊数量。",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "衡阳市",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 19,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 27,
+          "end": 30
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 34,
+          "end": 38
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "最近7天分别查询：深圳市有多少只雌性白纹伊蚊；广州市有多少只雄性白纹伊蚊；珠海市有多少只致倦库蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "type": "sex",
+          "text": "雌性",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 18,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 23,
+          "end": 26
+        },
+        {
+          "type": "sex",
+          "text": "雄性",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 32,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "最近7天",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "type": "city",
+          "text": "珠海市",
+          "start": 37,
+          "end": 40
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 44,
+          "end": 48
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "福建省厦门市分三项查询：今天监测了多少只蚊虫；本周主要有哪些蚊种；本月白纹伊蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "福建省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "city",
+          "text": "厦门市",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "type": "time",
+          "text": "本月",
+          "start": 33,
+          "end": 35
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 35,
+          "end": 39
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天深圳市有多少只蚊虫；昨天广州市有多少只蚊虫；近7天长沙市有哪些蚊种；近30天常宁市有哪些蚊种？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 14,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "type": "city",
+          "text": "长沙市",
+          "start": 27,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 36,
+          "end": 40
+        },
+        {
+          "type": "city",
+          "text": "常宁市",
+          "start": 40,
+          "end": 43
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "今天分别查询：深圳市蚊虫总数是多少；广州市蚊虫总数是多少；东莞市蚊虫总数是多少；佛山市蚊虫总数是多少？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "深圳市",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "广州市",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "东莞市",
+          "start": 29,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "type": "city",
+          "text": "佛山市",
+          "start": 40,
+          "end": 43
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "广东省分四项统计：今天有多少只白纹伊蚊；昨天有多少只白纹伊蚊；本周有多少只致倦库蚊；上周有多少只致倦库蚊？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 15,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 26,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "本周",
+          "start": 31,
+          "end": 33
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 37,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "province",
+          "text": "广东省",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "上周",
+          "start": 42,
+          "end": 44
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 48,
+          "end": 52
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "text": "南山区今天雌蚊有多少只；福田区昨天雄蚊有多少只；粤海街道近7天白纹伊蚊有多少只；南头街道近30天致倦库蚊有多少只？",
+  "tasks": [
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "南山区",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "type": "time",
+          "text": "今天",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "type": "sex",
+          "text": "雌",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "district",
+          "text": "福田区",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "type": "time",
+          "text": "昨天",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "type": "sex",
+          "text": "雄",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "street",
+          "text": "粤海街道",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "type": "time",
+          "text": "近7天",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "type": "species",
+          "text": "白纹伊蚊",
+          "start": 31,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "intent": "species_compose_report",
+      "entities": [
+        {
+          "type": "street",
+          "text": "南头街道",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "type": "time",
+          "text": "近30天",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "type": "species",
+          "text": "致倦库蚊",
+          "start": 48,
+          "end": 52
+        }
+      ]
+    }
+  ]
+}
