@@ -1,22 +1,13 @@
-"""训练和预测共用的默认配置。"""
-import os
+"""本地模型调用的配置，路径不依赖终端的当前目录。"""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-os.environ.setdefault('HF_HOME', str(ROOT / '.cache/huggingface'))
-os.environ.setdefault('DISABLE_SAFETENSORS_CONVERSION', 'true')
-MODEL_NAME = 'hfl/chinese-macbert-base'
-TRAIN_DIR = ROOT / 'data/train'
-VALIDATION_DIR = ROOT / 'data/validation'
-OUTPUT_DIR = ROOT / 'models/joint_nlu'
-
-
-def resolve_device(name):
-    import torch
-    if name == 'auto':
-        name = 'cuda' if torch.cuda.is_available() else ('mps' if torch.backends.mps.is_available() else 'cpu')
-    if name == 'mps' and not torch.backends.mps.is_available():
-        raise ValueError('当前环境无法使用 Apple GPU（MPS）。')
-    if name == 'cuda' and not torch.cuda.is_available():
-        raise ValueError('当前环境无法使用 CUDA。')
-    return torch.device(name)
+MODEL_NAME = 'qwen3:4b-q4_K_M'
+OLLAMA_HOST = 'http://localhost:11434'
+REQUEST_TIMEOUT = 180.0
+MAX_INPUT_LENGTH = 500
+THINK = False
+MODEL_OPTIONS = {'temperature': 0, 'seed': 42, 'num_ctx': 8192, 'num_predict': 4096}
+PROMPT_FILE = ROOT / 'prompts/nlu.txt'
+TEST_DIR = ROOT / 'data/test'
+REPORT_DIR = ROOT / 'reports'

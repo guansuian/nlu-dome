@@ -1,0 +1,448 @@
+{
+  "created_at": "2026-10-18T18:11:50.943830+08:00",
+  "model": "qwen3:4b-q4_K_M",
+  "host": "http://localhost:11434",
+  "think": false,
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192,
+    "num_predict": 4096
+  },
+  "request_timeout": 180.0,
+  "prompt_sha256": "02b6f209d59e6fb482c950052009c779a12d7b735ae392098a715605d8fd70ba",
+  "schema_sha256": "1e08ad0543339c25dea27689c9838226d00937ff6e3829f335ce5c99d90a461d",
+  "cases_sha256": "3889f809a0310e2b3e3b709da678cbecedbdc8204e87224b71b5ccf52a9b9876",
+  "data_dir": "/private/tmp/ollama_nlu_smoke_cases",
+  "available": 7,
+  "requested": 7,
+  "completed": true,
+  "limited_run": false,
+  "seconds": 19.02,
+  "overall": {
+    "total": 7,
+    "errors": 2,
+    "count_correct": {
+      "correct": 4,
+      "rate": 0.5714285714285714
+    },
+    "intent_correct": {
+      "correct": 4,
+      "rate": 0.5714285714285714
+    },
+    "complete_correct": {
+      "correct": 3,
+      "rate": 0.42857142857142855
+    }
+  },
+  "by_file": {
+    "cases.jsonl": {
+      "total": 7,
+      "errors": 2,
+      "count_correct": {
+        "correct": 4,
+        "rate": 0.5714285714285714
+      },
+      "intent_correct": {
+        "correct": 4,
+        "rate": 0.5714285714285714
+      },
+      "complete_correct": {
+        "correct": 3,
+        "rate": 0.42857142857142855
+      }
+    }
+  },
+  "details": [
+    {
+      "category": "cases.jsonl",
+      "text": "厦门市昨天监测到多少只白纹伊蚊？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "厦门市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 11,
+              "end": 15
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "厦门市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "species",
+              "text": "白纹伊蚊",
+              "start": 11,
+              "end": 15
+            }
+          ]
+        }
+      ],
+      "error": null,
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true
+    },
+    {
+      "category": "cases.jsonl",
+      "text": "贵阳市本周哪个区蚊虫最多？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "贵阳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "time",
+              "text": "本周",
+              "start": 3,
+              "end": 5
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "贵阳市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 7,
+              "end": 8
+            },
+            {
+              "type": "time",
+              "text": "本周",
+              "start": 3,
+              "end": 5
+            }
+          ]
+        }
+      ],
+      "error": null,
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true
+    },
+    {
+      "category": "cases.jsonl",
+      "text": "宁波市哪个区蚊虫最多？安徽省中华按蚊有多少只？",
+      "expected": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "city",
+              "text": "宁波市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "安徽省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "中华按蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "region_rank_report",
+          "entities": [
+            {
+              "type": "district",
+              "text": "宁波市",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "type": "rank_level",
+              "text": "区",
+              "start": 5,
+              "end": 6
+            },
+            {
+              "type": "top_n",
+              "text": "最多",
+              "start": 8,
+              "end": 10
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "province",
+              "text": "安徽省",
+              "start": 11,
+              "end": 14
+            },
+            {
+              "type": "species",
+              "text": "中华按蚊",
+              "start": 14,
+              "end": 18
+            }
+          ]
+        }
+      ],
+      "error": null,
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": false
+    },
+    {
+      "category": "cases.jsonl",
+      "text": "昨天青岛市有多少蚊虫，今天郑州市有多少蚊虫？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "type": "city",
+              "text": "青岛市",
+              "start": 2,
+              "end": 5
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 11,
+              "end": 13
+            },
+            {
+              "type": "city",
+              "text": "郑州市",
+              "start": 13,
+              "end": 16
+            }
+          ]
+        }
+      ],
+      "predicted": null,
+      "error": "任务 1 的实体位置与原文不一致：'蚊虫' [4:6]。",
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false
+    },
+    {
+      "category": "cases.jsonl",
+      "text": "本周的致倦库蚊，南京市和杭州市分别有多少只？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "time",
+              "text": "本周",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "type": "species",
+              "text": "致倦库蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "南京市",
+              "start": 8,
+              "end": 11
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "time",
+              "text": "本周",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "type": "species",
+              "text": "致倦库蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "city",
+              "text": "杭州市",
+              "start": 12,
+              "end": 15
+            }
+          ]
+        }
+      ],
+      "predicted": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "species",
+              "text": "致倦库蚊",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "type": "time",
+              "text": "本周",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "type": "province",
+              "text": "南京市",
+              "start": 8,
+              "end": 11
+            },
+            {
+              "type": "province",
+              "text": "杭州市",
+              "start": 12,
+              "end": 15
+            }
+          ]
+        }
+      ],
+      "error": null,
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false
+    },
+    {
+      "category": "cases.jsonl",
+      "text": "我想知道这台冰箱的价格。",
+      "expected": [],
+      "predicted": [],
+      "error": null,
+      "count_correct": true,
+      "intent_correct": true,
+      "complete_correct": true
+    },
+    {
+      "category": "cases.jsonl",
+      "text": "今天成都市有多少蚊虫？昨天成都市有多少蚊虫？",
+      "expected": [
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "time",
+              "text": "今天",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "type": "city",
+              "text": "成都市",
+              "start": 2,
+              "end": 5
+            }
+          ]
+        },
+        {
+          "intent": "species_compose_report",
+          "entities": [
+            {
+              "type": "time",
+              "text": "昨天",
+              "start": 11,
+              "end": 13
+            },
+            {
+              "type": "city",
+              "text": "成都市",
+              "start": 13,
+              "end": 16
+            }
+          ]
+        }
+      ],
+      "predicted": null,
+      "error": "任务 1 的实体位置与原文不一致：'蚊虫' [4:6]。",
+      "count_correct": false,
+      "intent_correct": false,
+      "complete_correct": false
+    }
+  ],
+  "definition": "任务数量、意图、实体类型、位置及归属全部正确；忽略任务顺序，保留重复任务。调用或校验失败计为错误。"
+}
